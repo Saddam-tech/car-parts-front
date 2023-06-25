@@ -12,7 +12,6 @@ const Index = () => {
                     <LogoBox />
                 ))}
             </div>
-
         </section>
     )
 }

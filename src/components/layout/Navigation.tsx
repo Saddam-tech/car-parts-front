@@ -10,7 +10,7 @@ const Navigation = () => {
                 <li>INQUIRY</li>
             </ul>
             <div className={styles.items}>
-                <input type="text" />
+                <input type="text" placeholder="Search" />
                 <h5>Login</h5>
                 <ul className={styles.language_pack}>
                     <li>English</li>
