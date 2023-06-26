@@ -7,11 +7,11 @@ const Navigation = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>();
     return (
         <nav className={styles.navigation}>
-            <ul>
+            <ul className={styles.parent}>
                 {navigation.map((el, i) => (
-                    <li onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i} className={styles.list_wrap}>
+                    <li className={styles.child} onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i}>
                         {el.name}
-                        {<Dropdown show={activeIndex === i} children={el.children} />}
+                        {<Dropdown index={i} setFunc={setActiveIndex} show={activeIndex === i} children={el.children} />}
                     </li>
                 ))}
             </ul>

@@ -1,9 +1,9 @@
 import styles from "./Dropdown.module.scss";
-const Dropdown = ({ show, children }: navChildren) => {
+const Dropdown = ({ show, children, index, setFunc }: navChildren) => {
     return (
-        <ul className={styles.dropdown}>
+        <ul onMouseEnter={() => setFunc(index)} className={!show ? styles.show : styles.dropdown}>
             {children.map((el, i) => (
-                <li className={!show ? styles.show : ""} key={i}>{el}</li>
+                <li className={!show ? styles.show : styles.children} key={i}>{el}</li>
             ))}
         </ul>
     )

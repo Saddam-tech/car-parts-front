@@ -3,11 +3,24 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20px;
   background-color: #ffffff;
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 62px;
+  width: 150px;
+
+  .children {
+    list-style-type: none;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+    background-color: #2200fe;
+    color: #ffffff;
+  }
+  .children:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #fe0000;
+  }
 }
 
 .show {
