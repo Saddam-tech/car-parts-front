@@ -1,11 +1,11 @@
 import styles from "./Logobox.module.scss";
 
-const LogoBox = () => {
+const LogoBox = ({ name, img }: logo_box_data_type) => {
     return (
         <div className={styles.main}>
-            <img src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/explained-m/exlm-og.jpg" alt="logo" />
+            <img src={img} alt="logo" />
             <div className={styles.inner_box}>
-                <p>ENGINE OIL</p>
+                <p>{name}</p>
             </div>
         </div>
     )
