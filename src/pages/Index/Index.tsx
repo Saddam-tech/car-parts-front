@@ -9,7 +9,7 @@ const Index = () => {
             <Carousel />
             <div className={styles.logo_wrap}>
                 {new Array(6).fill("*").map((el, i) => (
-                    <LogoBox />
+                    <LogoBox key={i} />
                 ))}
             </div>
         </section>

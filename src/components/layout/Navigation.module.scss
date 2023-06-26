@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   // background-color: rgba(0, 0, 0, 0.3);
-  background-color: #999999;
+  background-color: #ffffff;
   height: 60px;
   gap: 100px;
   position: fixed;
@@ -22,8 +22,10 @@
 
     li {
       list-style-type: none;
-      color: #ffffff;
-      font-size: 15px;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 550;
+      cursor: pointer;
     }
   }
   .items {
@@ -32,13 +34,15 @@
     justify-content: center;
     gap: 40px;
     h5 {
-      color: #ffffff;
+      color: #000000;
+      font-size: 14px;
       margin: 0;
       padding: 0;
+      cursor: pointer;
     }
     input {
       border-radius: 50px;
-      border: none;
+      border: 1px solid #999999;
       outline: none;
       padding: 0 10px;
       width: 130px;
@@ -46,7 +50,7 @@
     }
     input::placeholder {
       text-align: start;
-      font-size: 14px;
+      font-size: 12px;
     }
     .language_pack {
       display: flex;
@@ -56,4 +60,12 @@
       cursor: pointer;
     }
   }
+}
+
+.list_wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
 }
