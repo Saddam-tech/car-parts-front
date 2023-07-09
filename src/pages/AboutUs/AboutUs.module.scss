@@ -24,6 +24,20 @@
       font-size: 14px;
       list-style-type: none;
       text-decoration: none;
+      padding: 10px;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    hr {
+      width: 8%;
+      border: 1px solid #ff0000;
     }
   }
 }

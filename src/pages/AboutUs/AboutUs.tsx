@@ -16,6 +16,10 @@ const AboutUs = () => {
                     <li key={i}>{el.name}</li>
                 ))}
             </ul>
+            <div className={styles.wrapper}>
+                <h1>About Us</h1>
+                <hr />
+            </div>
         </section>
     )
 }
