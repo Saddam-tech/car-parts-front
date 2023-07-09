@@ -3,7 +3,13 @@ interface children {
   path: string;
 }
 
+interface activeIndex {
+  name: string;
+  children: children[];
+}
+
 interface navChildren {
+  activeIndex: activeIndex;
   show: boolean;
   children: children[];
   index: number | null;

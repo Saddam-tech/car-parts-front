@@ -15,4 +15,15 @@
       font-weight: 600;
     }
   }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    li {
+      font-size: 14px;
+      list-style-type: none;
+      text-decoration: none;
+    }
+  }
 }

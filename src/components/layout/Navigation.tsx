@@ -5,14 +5,13 @@ import Dropdown from "../Dropdown/Dropdown"
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const [activeIndex, setActiveIndex] = useState<number | null>();
-
     return (
         <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
             <ul className={styles.parent}>
                 {navigation.map((el, i) => (
                     <li className={`${styles.child} ${isTransparent ? styles.white : ""}`} onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i}>
                         {el.name}
-                        {<Dropdown index={i} setFunc={setActiveIndex} show={activeIndex === i} children={el.children} />}
+                        {<Dropdown activeIndex={el} index={i} setFunc={setActiveIndex} show={activeIndex === i} children={el.children} />}
                     </li>
                 ))}
             </ul>
