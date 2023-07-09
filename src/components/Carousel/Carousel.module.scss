@@ -2,7 +2,6 @@
   width: 100%;
   overflow: hidden;
   .slider {
-    height: 580px;
     max-height: 580px;
     .image {
       width: 100%;
@@ -10,4 +9,11 @@
       object-fit: cover;
     }
   }
+}
+
+.high {
+  height: 580px;
+}
+.low {
+  height: 300px;
 }

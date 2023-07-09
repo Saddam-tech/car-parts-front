@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+  .card {
+    position: absolute;
+    padding: 30px;
+    max-width: 680px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 100px;
+    left: 220px;
+    z-index: 9;
+
+    h1 {
+      color: #ff0000;
+      font-weight: 600;
+    }
+  }
+}

@@ -24,13 +24,17 @@
       font-size: 16px;
       font-weight: 450;
       cursor: pointer;
-      padding: 20px 5px;
+      padding: 5px 5px;
       position: relative;
     }
     .white {
       color: #ffffff;
       font-weight: 450;
     }
+  }
+
+  .active {
+    border-bottom: 1px solid #ff0000;
   }
   .items {
     display: flex;
@@ -55,6 +59,7 @@
       padding: 0 10px;
       width: 130px;
       height: 20px;
+      font-size: 12px;
     }
     input::placeholder {
       text-align: start;

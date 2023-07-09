@@ -1,29 +1,29 @@
 export const navigation = [{
 
     name: "COMPANY", children: [
-        "ABOUT US",
-        "ORGANIZATION & PARTNERS",
-        "HISTORY",
-        "PATENT & CERTIFICATION",
-        "CONTACT US"
+        { name: "ABOUT US", path: "aboutus" },
+        { name: "ORGANIZATION & PARTNERS", path: "org&prtns" },
+        { name: "HISTORY", path: "history" },
+        { name: "PATENT & CERTIFICATION", path: "patent&cert" },
+        { name: "CONTACT US", path: "contactus" },
     ]
 }, {
 
     name: "PRODUCTS", children: [
-        "CP-TECH",
-        "DOMO-BEARINGS",
-        "ENGINE-OIL",
-        "RE-BUILT PARTS",
-        "COMMERCIAL PARTS",
-        "OE & GENUINE PARTS",
-        "PVC FLOORING"
+        { name: "CP-TECH", path: "cp-tech" },
+        { name: "DOMO-BEARINGS", path: "domo-bearings" },
+        { name: "ENGINE-OIL", path: "engine-oil" },
+        { name: "RE-BUILT PARTS", path: "rebuild-parts" },
+        { name: "COMMERCIAL PARTS", path: "commercial-parts" },
+        { name: "OE & GENUINE PARTS", path: "oe&-genuine-parts" },
+        { name: "PVC FLOORING", path: "pvc-flooring" },
     ]
 }, {
 
     name: "CUSTOMER SERVICE", children: [
-        "NEWS & NOTICE",
-        "SPECIAL ORDER & STOCK",
-        "CATALOGUE DOWNLOAD",
+        { name: "NEWS & NOTICE", path: "news&notice" },
+        { name: "SPECIAL ORDER & STOCK", path: "special-order&stock" },
+        { name: "CATALOGUE DOWNLOAD", path: "catalogue-download" },
     ]
 }, { name: "INQUIRY", children: [] }]
 

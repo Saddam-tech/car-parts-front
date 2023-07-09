@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import styles from "./Navigation.module.scss"
 import { navigation } from "../../data/data"
 import Dropdown from "../Dropdown/Dropdown"

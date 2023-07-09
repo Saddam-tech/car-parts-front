@@ -1,6 +1,11 @@
+interface children {
+  name: string;
+  path: string;
+}
+
 interface navChildren {
   show: boolean;
-  children: string[];
+  children: children[];
   index: number | null;
   setFunc: Function;
 }
