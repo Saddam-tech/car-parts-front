@@ -1,6 +1,7 @@
 import Carousel from '../../components/Carousel/Carousel'
 import styles from "./AboutUs.module.scss"
 import { useSelector } from 'react-redux'
+import Box from '../../components/Box/Box'
 
 const AboutUs = () => {
     const activeIndex = useSelector((state: any) => state.activeIndex);
@@ -16,10 +17,20 @@ const AboutUs = () => {
                     <li key={i}>{el.name}</li>
                 ))}
             </ul>
-            <div className={styles.wrapper}>
-                <h1>About Us</h1>
-                <hr />
-            </div>
+            <section className={styles["outer-wrapper"]}>
+                <div className={styles.wrapper}>
+                    <h2>ABOUT US</h2>
+                    <hr />
+                </div>
+                <section className={styles["wrapper-2"]}>
+                    <h4>Business Philosophy</h4>
+                    <div className={styles.card_wrapper}>
+                        <Box />
+                        <Box />
+                        <Box />
+                    </div>
+                </section>
+            </section>
         </section>
     )
 }
