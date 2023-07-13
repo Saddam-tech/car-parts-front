@@ -36,3 +36,9 @@ export const logo_box_data = [
     { name: "COMMERCIAL PARTS", img: "https://c8.alamy.com/comp/2EJ4W5C/logo-of-the-car-brand-opel-free-space-on-white-background-2EJ4W5C.jpg" },
     { name: "OE & GENUINE PARTS", img: "https://c8.alamy.com/comp/2EJ4W6Y/logo-of-the-car-brand-mitsubishi-motors-free-space-on-white-background-2EJ4W6Y.jpg" }
 ]
+
+export const box_info = {
+    header: "MISSION",
+    content: "WATO should be one team with Buyer & Supplier, You & Me… WATO will always effort to grow with our Buyer & Suppliers.",
+    img_src: "https://t4.ftcdn.net/jpg/05/11/10/45/360_F_511104500_QgSrSsX7nwAW6j5vFPc4Ftwy0LhvJdYu.jpg"
+}

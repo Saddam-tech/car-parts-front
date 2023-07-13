@@ -20,3 +20,9 @@ interface logo_box_data_type {
   name: string;
   img: string;
 }
+
+interface box_info {
+  header?: string;
+  content?: string;
+  img_src?: string;
+}

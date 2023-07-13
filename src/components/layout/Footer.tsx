@@ -1,8 +1,10 @@
 import styles from "./Footer.module.scss"
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <section className={styles.main}>
-            <img src="https://png.pngtree.com/png-vector/20211023/ourmid/pngtree-salon-logo-png-image_4004444.png" alt="logo" />
+            <img onClick={() => navigate("/")} src="https://png.pngtree.com/png-vector/20211023/ourmid/pngtree-salon-logo-png-image_4004444.png" alt="logo" />
             <div className={styles.credentials}>
                 <ul>
                     <li>COMPANY</li>
@@ -19,3 +21,4 @@ const Footer = () => {
 }
 
 export default Footer
+
