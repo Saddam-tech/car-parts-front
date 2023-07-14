@@ -5,6 +5,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Organization from "./pages/Organization/Organization";
 import History from "./pages/History/History";
 import PtntAndCert from "./pages/Ptnt&Cert/Ptnt&Cert";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 
 const router = createBrowserRouter([{
@@ -16,6 +17,7 @@ const router = createBrowserRouter([{
         { path: "org&prtns", element: <Organization /> },
         { path: "history", element: <History /> },
         { path: "patent&cert", element: <PtntAndCert /> },
+        { path: "contactus", element: <ContactUs /> },
     ]
 }])
 

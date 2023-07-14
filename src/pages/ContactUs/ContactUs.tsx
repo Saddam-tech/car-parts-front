@@ -1,10 +1,9 @@
 import Carousel from '../../components/Carousel/Carousel'
-import styles from "./AboutUs.module.scss"
+import styles from "./ContactUs.module.scss"
 import { useSelector } from 'react-redux'
-import Box from '../../components/Box/Box'
-import { box_info } from '../../data/data'
+import KaKaoMap from '../../components/KakaoMap/KakaoMap'
 
-const AboutUs = () => {
+const ContactUs = () => {
     const activeIndex = useSelector((state: any) => state.activeIndex);
     return (
         <section className={styles.main}>
@@ -20,25 +19,16 @@ const AboutUs = () => {
             </ul>
             <section className={styles["outer-wrapper"]}>
                 <div className={styles.wrapper}>
-                    <h2>ABOUT US</h2>
+                    <h2>CONTACT US</h2>
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>
-                    <h4>Business Philosophy</h4>
-                    <div className={styles.card_wrapper}>
-                        {new Array(3).fill("*").map((_, i) => (
-                            <Box
-                                key={i}
-                                header={box_info.header}
-                                content={box_info.content}
-                                img_src={box_info.img_src}
-                            />
-                        ))}
-                    </div>
+                    <h4>Company Info</h4>
+                    {/* <KakaoMap /> */}
                 </section>
             </section>
         </section>
     )
 }
 
-export default AboutUs
+export default ContactUs
