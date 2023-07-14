@@ -9,13 +9,13 @@ const Carousel = ({ low }: { low?: boolean }) => {
         <section className={`${styles.carousel}`}>
             <CCarousel className={`${styles.slider} ${low ? styles.low : styles.high}`} transition="crossfade" interval={4000} controls indicators>
                 <CCarouselItem>
-                    <CImage className={styles.image} src="https://t4.ftcdn.net/jpg/05/11/10/45/360_F_511104500_QgSrSsX7nwAW6j5vFPc4Ftwy0LhvJdYu.jpg" alt="slide 1" />
+                    <CImage className={styles.image} src="https://img.freepik.com/premium-vector/set-auto-spare-parts_20029-37.jpg?w=2000" alt="slide 1" />
                 </CCarouselItem>
                 <CCarouselItem>
-                    <CImage className={styles.image} src="https://img.freepik.com/premium-psd/exclusive-tiers-facebook-cover-banner_496016-294.jpg" alt="slide 2" />
+                    <CImage className={styles.image} src="https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/08/06125648/Where-to-Buy-Car-Spare-Parts-in-Dubai-Cover-20210806.jpg" alt="slide 2" />
                 </CCarouselItem>
                 <CCarouselItem>
-                    <CImage className={styles.image} src="https://images.trophydepot.com/QC/images/products/Auto%20Mechanic%203x5%20Grommet.jpg" alt="slide 3" />
+                    <CImage className={styles.image} src="https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2023/01/20100238/How-to-Choose-Quality-Spare-Parts-for-Your-Car-_-Cover-1-20-1-23.jpg" alt="slide 3" />
                 </CCarouselItem>
             </CCarousel>
         </section>
