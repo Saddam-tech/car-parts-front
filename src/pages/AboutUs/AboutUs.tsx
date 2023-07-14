@@ -2,6 +2,7 @@ import Carousel from '../../components/Carousel/Carousel'
 import styles from "./AboutUs.module.scss"
 import { useSelector } from 'react-redux'
 import Box from '../../components/Box/Box'
+import { box_info } from '../../data/data'
 
 const AboutUs = () => {
     const activeIndex = useSelector((state: any) => state.activeIndex);
@@ -25,9 +26,12 @@ const AboutUs = () => {
                 <section className={styles["wrapper-2"]}>
                     <h4>Business Philosophy</h4>
                     <div className={styles.card_wrapper}>
-                        <Box />
-                        <Box />
-                        <Box />
+                        {new Array(3).fill("*").map(el => (
+                            <Box header={box_info.header}
+                                content={box_info.content}
+                                img_src={box_info.img_src}
+                            />
+                        ))}
                     </div>
                 </section>
             </section>

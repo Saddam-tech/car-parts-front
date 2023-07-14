@@ -36,12 +36,11 @@ const Organization = () => {
                 <section className={styles["wrapper-2"]}>
                     <div className={styles.card_wrapper}>
                         {new Array(3).fill("*").map(el => (
-                            <Box header={box_info.header}
+                            <Box
                                 content={box_info.content}
                                 img_src={box_info.img_src}
                             />
                         ))}
-
                     </div>
                 </section>
             </section>
