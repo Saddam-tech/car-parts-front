@@ -27,4 +27,3 @@ export default function KaKaoMap({ posX, posY }: kakao_positions) {
 
     return <div ref={mapRef} className={styles.mapBox} />
 }
-

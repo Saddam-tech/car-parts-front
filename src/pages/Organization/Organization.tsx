@@ -35,8 +35,9 @@ const Organization = () => {
                 </div>
                 <section className={styles["wrapper-2"]}>
                     <div className={styles.card_wrapper}>
-                        {new Array(3).fill("*").map(el => (
+                        {new Array(3).fill("*").map((_, i) => (
                             <Box
+                                key={i}
                                 content={box_info.content}
                                 img_src={box_info.img_src}
                             />

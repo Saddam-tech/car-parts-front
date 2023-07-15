@@ -42,3 +42,8 @@ export const box_info = {
     content: "WATO should be one team with Buyer & Supplier, You & Me… WATO will always effort to grow with our Buyer & Suppliers.",
     img_src: "https://t4.ftcdn.net/jpg/05/11/10/45/360_F_511104500_QgSrSsX7nwAW6j5vFPc4Ftwy0LhvJdYu.jpg"
 }
+
+export const map_coordinates = {
+    posX: "37.552350958321",
+    posY: "127.070906508666"
+}
