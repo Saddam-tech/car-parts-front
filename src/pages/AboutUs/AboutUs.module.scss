@@ -21,11 +21,15 @@
     justify-content: center;
     margin: 0;
     li {
-      font-size: 14px;
+      font-size: 13.5px;
       list-style-type: none;
       text-decoration: none;
-      padding: 15px 60px;
+      padding: 8px 60px;
       cursor: pointer;
+    }
+    li:hover {
+      background-color: hsl(240, 100%, 96%);
+      transition: background-color 0.3s ease-in-out;
     }
     .white {
       color: #000000;
