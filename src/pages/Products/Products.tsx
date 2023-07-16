@@ -1,10 +1,9 @@
 import Carousel from '../../components/Carousel/Carousel'
-import styles from "./AboutUs.module.scss"
+import styles from "./Products.module.scss"
 import { useSelector } from 'react-redux'
-import Box from '../../components/Box/Box'
-import { box_info } from '../../data/data'
+import Product from '../../components/Product/Product'
 
-const AboutUs = () => {
+const Products = ({ products, path }: product_list) => {
     const activeIndex = useSelector((state: any) => state.activeIndex);
     return (
         <section className={styles.main}>
@@ -20,18 +19,16 @@ const AboutUs = () => {
             </ul>
             <section className={styles["outer-wrapper"]}>
                 <div className={styles.wrapper}>
-                    <h2>ABOUT US</h2>
+                    <h2>CP-TECH</h2>
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>
-                    <h4><span>I&nbsp;</span>Business Philosophy</h4>
                     <div className={styles.card_wrapper}>
-                        {new Array(3).fill("*").map((_, i) => (
-                            <Box
+                        {products.map((el, i) => (
+                            <Product
                                 key={i}
-                                header={box_info.header}
-                                content={box_info.content}
-                                img_src={box_info.img_src}
+                                name={el}
+                                img_src={require(`../../assets/images/${path}/p-${i}.png`)}
                             />
                         ))}
                     </div>
@@ -41,4 +38,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default Products

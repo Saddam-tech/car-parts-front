@@ -75,3 +75,28 @@ export const contact_info = [
         p: "wato@wato.co.kr"
     },
 ]
+
+export const product_list_1 = [
+    "ALTERNATOR & STARTER",
+    "ELECTRIC COMPONENT PARTS",
+    "WHEEL HUB ASSY",
+    "AIR & OIL FILTER",
+    "POWER STEERING GEAR",
+    "POWER OIL PUMP",
+    "SHOCK ABSORBER",
+    "DRIVE SHAFT & BOOT KIT",
+    "SUSPENSION PARTS",
+    "GASKET KIT",
+    "FUEL PUMP MODULE",
+    "BRAKE PAD & SHOE",
+]
+export const product_list_2 = [
+    "WHEEL-HUB BALL BEARING",
+    "WHEEL-HUB BALL BEARING KIT",
+    "WHEEL-HUB TAPER BEARING",
+    "WHEEL-HUB TAPER BEARING KIT",
+    "TIMING TENSIONER",
+    "IDLER PULLEY",
+    "CLUTCH RELEASE BEARING",
+    "TIMING BELT KIT",
+]

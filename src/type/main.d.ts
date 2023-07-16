@@ -26,8 +26,17 @@ interface box_info {
   content?: string;
   img_src?: string;
 }
+interface product_info {
+  name: string;
+  img_src: string;
+}
 
 interface kakao_positions {
   posX: string;
   posY: string;
+}
+
+interface product_list {
+  products: string[];
+  path: string;
 }
