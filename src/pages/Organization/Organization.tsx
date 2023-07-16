@@ -11,7 +11,7 @@ const Organization = () => {
         <section className={styles.main}>
             <Carousel low={true} />
             <div className={styles.card}>
-                <h1>{activeIndex?.name}</h1>
+                <h1>{activeIndex?.parent?.name}</h1>
                 <p>Do More For Your Happy Life!! Carry On Tomorrow...</p>
             </div>
             <ul className={styles.navbar}>
@@ -21,7 +21,7 @@ const Organization = () => {
             </ul>
             <section className={`${styles["outer-wrapper"]} ${styles["a-white"]}`}>
                 <div className={styles.wrapper}>
-                    <h2>ORGANIZATION</h2>
+                    <h2>{activeIndex?.child?.name}</h2>
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>

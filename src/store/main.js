@@ -9,11 +9,14 @@ const mainSlice = createSlice({
   initialState,
   reducers: {
     setActiveIndex(state, action) {
-      state.activeIndex = action.payload;
+      state.activeIndex["parent"] = action.payload;
+    },
+    setSubActiveIndex(state, action) {
+      state.activeIndex["child"] = action.payload;
     },
   },
 });
 
-export const { setActiveIndex } = mainSlice.actions;
+export const { setActiveIndex, setSubActiveIndex } = mainSlice.actions;
 
 export default mainSlice.reducer;

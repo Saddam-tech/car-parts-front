@@ -40,3 +40,8 @@ interface product_list {
   products: string[];
   path: string;
 }
+
+interface sub_active_path {
+  name: string;
+  path: string;
+}
