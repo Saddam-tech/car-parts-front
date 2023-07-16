@@ -42,12 +42,12 @@ const AboutUs = () => {
                 <section className={styles["wrapper-2"]}>
                     <h4><span>I&nbsp;</span>{t("sub-sub-header")}</h4>
                     <div className={styles.card_wrapper}>
-                        {new Array(3).fill("*").map((_, i) => (
+                        {box_info.map((el, i) => (
                             <Box
                                 key={i}
-                                header={t(box_info.header)}
-                                content={t(box_info.content)}
-                                img_src={box_info.img_src}
+                                header={t(el.header)}
+                                content={t(el.content)}
+                                img_src={el.img_src}
                             />
                         ))}
                     </div>

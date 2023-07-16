@@ -42,11 +42,23 @@ export const logo_box_data = [
     { name: "OE & GENUINE PARTS", img: "https://c8.alamy.com/comp/2EJ4W6Y/logo-of-the-car-brand-mitsubishi-motors-free-space-on-white-background-2EJ4W6Y.jpg" }
 ]
 
-export const box_info = {
-    header: "box-info-h-1",
-    content: "box-info-p-1",
-    img_src: "https://t4.ftcdn.net/jpg/05/11/10/45/360_F_511104500_QgSrSsX7nwAW6j5vFPc4Ftwy0LhvJdYu.jpg"
-}
+export const box_info = [
+    {
+        header: "box-info-h-1",
+        content: "box-info-p-1",
+        img_src: "aboutus-0"
+    },
+    {
+        header: "box-info-h-2",
+        content: "box-info-p-2",
+        img_src: "aboutus-1"
+    },
+    {
+        header: "box-info-h-3",
+        content: "box-info-p-3",
+        img_src: "aboutus-2"
+    },
+]
 
 export const map_coordinates = {
     posX: "37.552350958321",

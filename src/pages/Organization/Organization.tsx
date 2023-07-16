@@ -35,7 +35,7 @@ const Organization = () => {
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>
-                    <img src={org_structure} alt="chart" />
+                    <img className={styles["org-structure-img"]} src={org_structure} alt="chart" />
                 </section>
             </section>
             <section className={`${styles["outer-wrapper"]} ${styles["c-white"]}`}>
@@ -45,11 +45,11 @@ const Organization = () => {
                 </div>
                 <section className={styles["wrapper-2"]}>
                     <div className={styles.card_wrapper}>
-                        {new Array(3).fill("*").map((_, i) => (
+                        {box_info.map((el, i) => (
                             <Box
                                 key={i}
-                                content={t(box_info.content)}
-                                img_src={box_info.img_src}
+                                content={t(el.content)}
+                                img_src={el.img_src}
                             />
                         ))}
                     </div>

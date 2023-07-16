@@ -4,7 +4,7 @@ const Box = ({ header, content, img_src }: box_info) => {
         <section className={styles.box}>
             <h5>{header}</h5>
             <div className={styles.inner}>
-                <img src={img_src} alt="box-img" />
+                <img src={require(`../../assets/images/${img_src}.png`)} alt="box-img" />
                 <p>
                     {content}
                 </p>
