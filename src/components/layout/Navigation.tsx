@@ -5,14 +5,16 @@ import g_logo from "../../assets/images/g_logo.png";
 import Dropdown from "../Dropdown/Dropdown"
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next"
+import { useNavigate } from 'react-router-dom'
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     const [activeIndex, setActiveIndex] = useState<number | null>();
     const prevActiveIndex = useSelector((state: any) => state.activeIndex);
     return (
         <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
-            <img src={g_logo} alt="g_logo" />
+            <img onClick={() => navigate("/")} src={g_logo} alt="g_logo" />
             <ul className={styles.parent}>
                 {navigation.map((el, i) => (
                     <li className={`${styles.child} ${isTransparent ? styles.white : ""} ${prevActiveIndex?.parent?.name === el.name ? styles.active : ""}`} onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i}>

@@ -61,8 +61,8 @@ export const box_info = [
 ]
 
 export const map_coordinates = {
-    posX: "37.552350958321",
-    posY: "127.070906508666"
+    posX: "37.5641159325404",
+    posY: "127.057985766197"
 }
 
 export const contact_info = [
