@@ -4,9 +4,12 @@
   justify-content: center;
   flex-direction: column;
   border: 1px solid #999999;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
 
   img {
-    width: 200px;
+    width: 100px;
     height: 80px;
     object-fit: cover;
   }
