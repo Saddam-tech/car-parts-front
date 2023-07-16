@@ -95,6 +95,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
 
       .inner-card {
         display: flex;
@@ -103,7 +104,7 @@
         flex-direction: column;
         gap: 10px;
         width: 100%;
-        max-width: 1000px;
+        max-width: 313px;
         border: 1px solid #dddddd;
         height: 180px;
         padding: 10px 27px;

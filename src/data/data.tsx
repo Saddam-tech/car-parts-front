@@ -69,7 +69,7 @@ export const contact_info = [
     {
         icon: <LocationOnIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "ADDRESS",
-        p: "32-11, Munbong-gil 62beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea. 10257"
+        p: "서울 동대문구 답십리동 961-9"
     },
     {
         icon: <LocalPhoneIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
