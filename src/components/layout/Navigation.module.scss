@@ -20,7 +20,6 @@
 
     .child {
       list-style-type: none;
-      color: #000000;
       font-size: 16px;
       font-weight: 450;
       cursor: pointer;
@@ -30,6 +29,14 @@
     .white {
       color: #ffffff;
       font-weight: 450;
+    }
+    .child:hover {
+      color: #ff0000;
+      transition: color 0.3s ease-in-out;
+    }
+    .active {
+      color: #ff0000;
+      border-bottom: 1px solid #ff0000;
     }
   }
 

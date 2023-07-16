@@ -2,14 +2,16 @@ import { useState } from "react"
 import styles from "./Navigation.module.scss"
 import { navigation } from "../../data/data"
 import Dropdown from "../Dropdown/Dropdown"
+import { useSelector } from "react-redux";
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const [activeIndex, setActiveIndex] = useState<number | null>();
+    const prevActiveIndex = useSelector((state: any) => state.activeIndex);
     return (
         <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
             <ul className={styles.parent}>
                 {navigation.map((el, i) => (
-                    <li className={`${styles.child} ${isTransparent ? styles.white : ""}`} onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i}>
+                    <li className={`${styles.child} ${isTransparent ? styles.white : ""} ${prevActiveIndex?.parent?.name === el.name ? styles.active : ""}`} onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i}>
                         {el.name}
                         {<Dropdown activeIndex={el} index={i} setFunc={setActiveIndex} show={activeIndex === i} children={el.children} />}
                     </li>
