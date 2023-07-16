@@ -8,8 +8,7 @@
   width: 100%;
   padding: 100px 0;
   img {
-    width: 200px;
-    height: 100px;
+    width: 100px;
     cursor: pointer;
   }
 
@@ -29,6 +28,16 @@
         color: #999999;
         font-size: 12px;
         list-style-type: none;
+        cursor: pointer;
+        padding: 5px 0;
+      }
+      li:hover {
+        color: #ffffff;
+        transition: color 0.3s ease-in-out;
+      }
+      .active {
+        color: #ffffff;
+        border-bottom: 1px solid #ff0000;
       }
     }
     p {

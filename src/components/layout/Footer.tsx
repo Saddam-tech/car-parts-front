@@ -1,23 +1,35 @@
 import styles from "./Footer.module.scss"
 import { useNavigate } from "react-router-dom";
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import { useSelector, useDispatch } from 'react-redux'
+import { useTranslation } from "react-i18next"
+import f_logo from "../../assets/images/f_logo.png";
+import { navigation } from "../../data/data";
+import { setActiveIndex, setSubActiveIndex } from "../../store/main";
 const Footer = () => {
+    const { t } = useTranslation();
+    const activeIndex = useSelector((state: any) => state.activeIndex);
+    const dispatch = useDispatch();
     const navigate = useNavigate();
+    function navigateHandler(child: active_path) {
+        navigate(`/${child.children[0]?.path.toUpperCase()}`);
+        dispatch(setActiveIndex(child))
+        dispatch(setSubActiveIndex(child.children[0]))
+    }
     function scrollTop() {
         window.scrollTo(0, 0);
     }
     return (
         <section className={styles.main}>
-            <img onClick={() => navigate("/")} src="https://png.pngtree.com/png-vector/20211023/ourmid/pngtree-salon-logo-png-image_4004444.png" alt="logo" />
+            <img onClick={() => navigate("/")} src={f_logo} alt="logo" />
             <div className={styles.credentials}>
                 <ul>
-                    <li>COMPANY</li>
-                    <li>PRODUCTS</li>
-                    <li>CUSTOMER SERVICE</li>
-                    <li>INQUIRY</li>
+                    {navigation.map((el, i) => (
+                        <li onClick={() => navigateHandler(el)} className={activeIndex?.parent?.name === el.name ? styles.active : ""} key={i}>{t(el.name)}</li>
+                    ))}
                 </ul>
-                <p>Tel.+82-31-967-1500 | Fax. +82-31-967-2900 | E-Mail : wato@wato.co.kr</p>
-                <p>ADD : 32-11, Munbong-gil 62beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea. 10257</p>
+                <p>{t("tel")} +82-31-967-1500 | Fax. +82-31-967-2900 | E-Mail : wato@wato.co.kr</p>
+                <p>{t("address")} : 32-11, Munbong-gil 62beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea. 10257</p>
             </div>
             <ArrowCircleUpIcon onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />
         </section>

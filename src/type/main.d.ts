@@ -45,3 +45,7 @@ interface sub_active_path {
   name: string;
   path: string;
 }
+interface active_path {
+  name: string;
+  children: sub_active_path[];
+}

@@ -43,8 +43,8 @@ export const logo_box_data = [
 ]
 
 export const box_info = {
-    header: "MISSION",
-    content: "WATO should be one team with Buyer & Supplier, You & Me… WATO will always effort to grow with our Buyer & Suppliers.",
+    header: "box-info-h-1",
+    content: "box-info-p-1",
     img_src: "https://t4.ftcdn.net/jpg/05/11/10/45/360_F_511104500_QgSrSsX7nwAW6j5vFPc4Ftwy0LhvJdYu.jpg"
 }
 

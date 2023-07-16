@@ -6,8 +6,10 @@ import Box from '../../components/Box/Box'
 import { box_info } from '../../data/data'
 import { setSubActiveIndex } from '../../store/main'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from "react-i18next"
 
 const Organization = () => {
+    const { t } = useTranslation();
     const activeIndex = useSelector((state: any) => state.activeIndex);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -19,17 +21,17 @@ const Organization = () => {
         <section className={styles.main}>
             <Carousel low={true} />
             <div className={styles.card}>
-                <h1>{activeIndex?.parent?.name}</h1>
-                <p>Do More For Your Happy Life!! Carry On Tomorrow...</p>
+                <h1>{t(activeIndex?.parent?.name)}</h1>
+                <p>{t("SUB_HEADER")}</p>
             </div>
             <ul className={styles.navbar}>
                 {activeIndex?.parent?.children.map((el: children, i: number) => (
-                    <li onClick={() => navigateHandler(el)} className={`${el.name === activeIndex?.child?.name ? styles.blue : styles.white}`} key={i}>{el.name}</li>
+                    <li onClick={() => navigateHandler(el)} className={`${el.name === activeIndex?.child?.name ? styles.blue : styles.white}`} key={i}>{t(el.name)}</li>
                 ))}
             </ul>
             <section className={`${styles["outer-wrapper"]} ${styles["a-white"]}`}>
                 <div className={styles.wrapper}>
-                    <h2>{activeIndex?.child?.name}</h2>
+                    <h2>{t(activeIndex?.child?.name)}</h2>
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>
@@ -38,7 +40,7 @@ const Organization = () => {
             </section>
             <section className={`${styles["outer-wrapper"]} ${styles["c-white"]}`}>
                 <div className={styles.wrapper}>
-                    <h2>PARTNERS</h2>
+                    <h2>{t("PARTNERS")}</h2>
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>
@@ -46,7 +48,7 @@ const Organization = () => {
                         {new Array(3).fill("*").map((_, i) => (
                             <Box
                                 key={i}
-                                content={box_info.content}
+                                content={t(box_info.content)}
                                 img_src={box_info.img_src}
                             />
                         ))}

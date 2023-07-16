@@ -3,8 +3,10 @@ import styles from "./Navigation.module.scss"
 import { navigation } from "../../data/data"
 import Dropdown from "../Dropdown/Dropdown"
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next"
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
+    const { t } = useTranslation();
     const [activeIndex, setActiveIndex] = useState<number | null>();
     const prevActiveIndex = useSelector((state: any) => state.activeIndex);
     return (
@@ -12,7 +14,7 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
             <ul className={styles.parent}>
                 {navigation.map((el, i) => (
                     <li className={`${styles.child} ${isTransparent ? styles.white : ""} ${prevActiveIndex?.parent?.name === el.name ? styles.active : ""}`} onMouseEnter={() => setActiveIndex(i)} onMouseLeave={() => setActiveIndex(null)} key={i}>
-                        {el.name}
+                        {t(el.name)}
                         {<Dropdown activeIndex={el} index={i} setFunc={setActiveIndex} show={activeIndex === i} children={el.children} />}
                     </li>
                 ))}
@@ -21,10 +23,10 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                 <input type="text" placeholder="Search" />
                 <h5 className={`${isTransparent ? styles.white : ""}`}>Login</h5>
                 <ul className={styles.language_pack}>
+                    <li className={`${isTransparent ? styles.white : ""}`}>Korean</li>
                     <li className={`${isTransparent ? styles.white : ""}`}>English</li>
                     <li className={`${isTransparent ? styles.white : ""}`}>Russian</li>
                     <li className={`${isTransparent ? styles.white : ""}`}>Uzbek</li>
-                    <li className={`${isTransparent ? styles.white : ""}`}>Arabic</li>
                 </ul>
             </div>
         </nav>

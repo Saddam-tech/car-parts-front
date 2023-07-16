@@ -4,8 +4,10 @@ import Product from '../../components/Product/Product'
 import { useSelector, useDispatch } from 'react-redux'
 import { setSubActiveIndex } from '../../store/main'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from "react-i18next"
 
 const Products = ({ products, path }: product_list) => {
+    const { t } = useTranslation();
     const activeIndex = useSelector((state: any) => state.activeIndex);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -35,7 +37,7 @@ const Products = ({ products, path }: product_list) => {
                         {products.map((el, i) => (
                             <Product
                                 key={i}
-                                name={el}
+                                name={t(el)}
                                 img_src={require(`../../assets/images/${path}/p-${i}.png`)}
                             />
                         ))}
