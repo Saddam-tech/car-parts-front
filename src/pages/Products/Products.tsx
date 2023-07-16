@@ -1,7 +1,7 @@
 import Carousel from '../../components/Carousel/Carousel'
 import styles from "./Products.module.scss"
-import { useSelector, useDispatch } from 'react-redux'
 import Product from '../../components/Product/Product'
+import { useSelector, useDispatch } from 'react-redux'
 import { setSubActiveIndex } from '../../store/main'
 import { useNavigate } from 'react-router-dom'
 
