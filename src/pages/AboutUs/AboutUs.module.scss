@@ -19,16 +19,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
-    padding: 10px;
     margin: 0;
     li {
       font-size: 14px;
       list-style-type: none;
       text-decoration: none;
-      padding: 10px;
-      background-color: #ffffff;
+      padding: 15px 60px;
       cursor: pointer;
+    }
+    .white {
+      color: #000000;
+      background-color: #ffffff;
+    }
+    .blue {
+      color: #ffffff;
+      background-color: #07008f;
     }
   }
   .outer-wrapper {

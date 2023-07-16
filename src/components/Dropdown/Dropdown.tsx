@@ -1,9 +1,10 @@
 import styles from "./Dropdown.module.scss";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setActiveIndex, setSubActiveIndex } from "../../store/main";
 const Dropdown = ({ activeIndex, show, children, index, setFunc }: navChildren) => {
     const dispatch = useDispatch();
+    const prevActiveIndex = useSelector((state: any) => state.activeIndex);
     function dispatchHandler(child: sub_active_path) {
         dispatch(setActiveIndex(activeIndex))
         dispatch(setSubActiveIndex(child))
@@ -11,7 +12,7 @@ const Dropdown = ({ activeIndex, show, children, index, setFunc }: navChildren) 
     return (
         <ul onMouseEnter={() => setFunc(index)} className={!show ? styles.show : styles.dropdown}>
             {children.map((el: children, i: number) => (
-                <Link to={el.path.toUpperCase()} onClick={() => dispatchHandler(el)} className={!show ? styles.show : styles.children} key={i}>{el.name}</Link>
+                <Link to={el.path.toUpperCase()} onClick={() => dispatchHandler(el)} className={`${!show ? styles.show : styles.children} ${prevActiveIndex?.child?.name === el.name ? styles.active : ""}`} key={i}>{el.name}</Link>
             ))}
         </ul>
     )

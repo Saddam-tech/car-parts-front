@@ -12,8 +12,8 @@ const PtntAndCert = () => {
                 <p>Do More For Your Happy Life!! Carry On Tomorrow...</p>
             </div>
             <ul className={styles.navbar}>
-                {activeIndex?.children.map((el: children, i: number) => (
-                    <li key={i}>{el.name}</li>
+                {activeIndex?.parent?.children.map((el: children, i: number) => (
+                    <li className={`${el.name === activeIndex?.child?.name ? styles.blue : styles.white}`} key={i}>{el.name}</li>
                 ))}
             </ul>
             <section className={styles["outer-wrapper"]}>
