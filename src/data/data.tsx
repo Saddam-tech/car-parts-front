@@ -1,3 +1,8 @@
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import FaxIcon from '@mui/icons-material/Fax';
+import EmailIcon from '@mui/icons-material/Email';
+
 export const navigation = [{
 
     name: "COMPANY", children: [
@@ -47,3 +52,26 @@ export const map_coordinates = {
     posX: "37.552350958321",
     posY: "127.070906508666"
 }
+
+export const contact_info = [
+    {
+        icon: <LocationOnIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
+        header: "ADDRESS",
+        p: "32-11, Munbong-gil 62beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea. 10257"
+    },
+    {
+        icon: <LocalPhoneIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
+        header: "TEL",
+        p: "+82-31-967-1500"
+    },
+    {
+        icon: <FaxIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
+        header: "FAX",
+        p: "+82-31-967-2900"
+    },
+    {
+        icon: <EmailIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
+        header: "EMAIL",
+        p: "wato@wato.co.kr"
+    },
+]

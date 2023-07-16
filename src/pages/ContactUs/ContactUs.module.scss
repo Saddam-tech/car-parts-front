@@ -45,9 +45,10 @@
       width: 100%;
       flex-direction: column;
       hr {
-        width: 8%;
+        width: 7%;
         border: 1px solid #ff0000;
         margin: 5px;
+        opacity: 100%;
       }
       h2 {
         font-weight: 600;
@@ -58,17 +59,49 @@
       align-items: center;
       justify-content: center;
       width: 100%;
+      max-width: 1250px;
       flex-direction: column;
       margin: 20px 0;
       h4 {
+        width: 100%;
         margin: 20px 0;
         font-weight: 600;
         color: #5c5c5c;
+        span {
+          color: #ff0000;
+        }
       }
       .card_wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+    }
+
+    .credentials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .inner-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 1000px;
+        border: 1px solid #dddddd;
+        height: 180px;
+        padding: 10px 27px;
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+          margin: 0;
+          padding: 0;
+        }
       }
     }
   }

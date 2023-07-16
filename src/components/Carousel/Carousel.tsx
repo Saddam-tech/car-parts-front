@@ -9,7 +9,7 @@ const Carousel = ({ low }: { low?: boolean }) => {
         <section className={`${styles.carousel}`}>
             <CCarousel className={`${styles.slider} ${low ? styles.low : styles.high}`} transition="crossfade" interval={4000} controls indicators>
                 <CCarouselItem>
-                    <CImage className={styles.image} src="https://img.freepik.com/premium-vector/set-auto-spare-parts_20029-37.jpg?w=2000" alt="slide 1" />
+                    <CImage className={styles.image} src="https://myfitment.com/wp-content/uploads/2022/02/Where-To-Sell-Auto-Parts.jpg" alt="slide 1" />
                 </CCarouselItem>
                 <CCarouselItem>
                     <CImage className={styles.image} src="https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/08/06125648/Where-to-Buy-Car-Spare-Parts-in-Dubai-Cover-20210806.jpg" alt="slide 2" />

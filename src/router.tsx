@@ -20,6 +20,5 @@ const router = createBrowserRouter([{
         { path: "contactus", element: <ContactUs /> },
     ]
 }])
-
 export default router;
 

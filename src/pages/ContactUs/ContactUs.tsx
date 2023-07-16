@@ -2,7 +2,7 @@ import Carousel from '../../components/Carousel/Carousel'
 import styles from "./ContactUs.module.scss"
 import { useSelector } from 'react-redux'
 import KaKaoMap from '../../components/KakaoMap/KakaoMap'
-import { map_coordinates } from '../../data/data'
+import { map_coordinates, contact_info } from '../../data/data'
 
 const ContactUs = () => {
     const activeIndex = useSelector((state: any) => state.activeIndex);
@@ -24,8 +24,17 @@ const ContactUs = () => {
                     <hr />
                 </div>
                 <section className={styles["wrapper-2"]}>
-                    <h4>Company Info</h4>
+                    <h4><span>I&nbsp;</span>COMPANY INFO</h4>
                     <KaKaoMap posX={map_coordinates["posX"]} posY={map_coordinates["posY"]} />
+                </section>
+                <section className={styles.credentials}>
+                    {contact_info.map((el, i) => (
+                        <div className={styles["inner-card"]}>
+                            {el.icon}
+                            <h3>{el.header}</h3>
+                            <p>{el.p}</p>
+                        </div>
+                    ))}
                 </section>
             </section>
         </section>
