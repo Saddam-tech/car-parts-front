@@ -2,6 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 const en = require("./i18n/En.json");
 const kr = require("./i18n/Kr.json");
+const uz = require("./i18n/Uz.json");
+const ru = require("./i18n/Ru.json");
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -12,6 +14,12 @@ const resources = {
   },
   kr: {
     translation: kr,
+  },
+  uz: {
+    translation: uz,
+  },
+  ru: {
+    translation: ru,
   },
 };
 

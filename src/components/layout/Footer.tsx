@@ -29,7 +29,7 @@ const Footer = () => {
                     ))}
                 </ul>
                 <p>{t("tel")} +82-31-967-1500 | Fax. +82-31-967-2900 | E-Mail : wato@wato.co.kr</p>
-                <p>{t("address")} : 32-11, Munbong-gil 62beon-gil, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea. 10257</p>
+                <p>{t("address")} : 서울 동대문구 답십리동 961-9</p>
             </div>
             <ArrowCircleUpIcon onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />
         </section>

@@ -38,7 +38,7 @@ const Products = ({ products, path }: product_list) => {
                             <Product
                                 key={i}
                                 name={t(el)}
-                                img_src={require(`../../assets/images/${path}/p-${i}.png`)}
+                                img_src={require(`../../assets/images/${path}/p-${i}.JPG`)}
                             />
                         ))}
                     </div>
