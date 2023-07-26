@@ -13,10 +13,13 @@ import flag_uzb from "../../assets/images/flag-uz.png"
 import flag_ru from "../../assets/images/flag-ru.png"
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const [activeIndex, setActiveIndex] = useState<number | null>();
     const prevActiveIndex = useSelector((state: any) => state.activeIndex);
+    function languageChangeHandler(lng: string) {
+        i18n.changeLanguage(lng);
+    }
     return (
         <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
             <img onClick={() => navigate("/")} src={g_logo} alt="g_logo" />
@@ -33,23 +36,23 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                 <h5 className={`${isTransparent ? styles.white : ""}`}>Login</h5>
                 <ul className={styles.language_pack}>
                     <div className={styles.img_container}>
-                        <img title="Korean" src={flag_sk} alt="S.Korean Flag" />
+                        <img onClick={() => languageChangeHandler("kr")} title="Korean" src={flag_sk} alt="S.Korean Flag" />
                         <div className={styles.tooltip}>Korean</div>
                     </div>
                     <div className={styles.img_container}>
-                        <img src={flag_gb} alt="English Flag" />
+                        <img onClick={() => languageChangeHandler("en")} src={flag_gb} alt="English Flag" />
                         <div className={styles.tooltip}>English</div>
                     </div>
                     <div className={styles.img_container}>
-                        <img src={flag_ru} alt="Russian Flag" />
+                        <img onClick={() => languageChangeHandler("ru")} src={flag_ru} alt="Russian Flag" />
                         <div className={styles.tooltip}>Russian</div>
                     </div>
                     <div className={styles.img_container}>
-                        <img src={flag_sa} alt="Saudi Arabian Flag" />
+                        <img onClick={() => languageChangeHandler("sa")} src={flag_sa} alt="Saudi Arabian Flag" />
                         <div className={styles.tooltip}>Arabic</div>
                     </div>
                     <div className={styles.img_container}>
-                        <img src={flag_uzb} alt="Uzbek Flag" />
+                        <img onClick={() => languageChangeHandler("uz")} src={flag_uzb} alt="Uzbek Flag" />
                         <div className={styles.tooltip}>Uzbek</div>
                     </div>
                 </ul>

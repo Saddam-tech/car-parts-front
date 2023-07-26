@@ -4,6 +4,7 @@ const en = require("./i18n/En.json");
 const kr = require("./i18n/Kr.json");
 const uz = require("./i18n/Uz.json");
 const ru = require("./i18n/Ru.json");
+const sa = require("./i18n/Sa.json");
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -20,6 +21,9 @@ const resources = {
   },
   ru: {
     translation: ru,
+  },
+  sa: {
+    translation: sa,
   },
 };
 
