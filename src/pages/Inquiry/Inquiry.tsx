@@ -60,7 +60,7 @@ const Inquiry = () => {
                         </div>
                         <div className={styles["input-sub-wrapper"]}>
                             <label htmlFor="message">{t("message")}</label>
-                            <input id='message' type="text" />
+                            <textarea id='message' />
                         </div>
                     </div>
                     <button>Submit</button>

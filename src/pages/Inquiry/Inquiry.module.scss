@@ -104,12 +104,17 @@
           justify-content: flex-start;
           flex-direction: column;
           width: 100%;
-          input {
+          input,
+          textarea {
             width: 100%;
             border: none;
             border-bottom: 1px solid #000000;
             background: transparent;
             outline: none;
+          }
+          input:hover {
+            border-bottom: 1px solid #ff0000;
+            transition: border-bottom 0.3s ease-in-out;
           }
         }
       }
