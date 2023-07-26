@@ -1,4 +1,5 @@
 {
+  "login": "로그인",
   "SUB_HEADER": "행복한 삶을 위해 더 많은 것을 하세요! 내일을 계속하세요...",
   "COMPANY INFO": "회사 정보",
   "COMPANY": "회사",
@@ -54,5 +55,10 @@
   "TIMING TENSIONER": "타이밍 텐셔너",
   "IDLER PULLEY": "아이들러 풀리",
   "CLUTCH RELEASE BEARING": "클러치 해제 베어링",
-  "TIMING BELT KIT": "타이밍 벨트 키트"
+  "TIMING BELT KIT": "타이밍 벨트 키트",
+  "KOREAN": "한국어",
+  "ENGLISH": "영어",
+  "UZBEK": "우즈베크어",
+  "ARABIC": "아랍어",
+  "RUSSIAN": "러시아인"
 }

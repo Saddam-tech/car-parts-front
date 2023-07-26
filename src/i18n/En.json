@@ -1,4 +1,5 @@
 {
+  "login": "Login",
   "SUB_HEADER": "Do More For Your Happy Life!! Carry On Tomorrow...",
   "COMPANY INFO": "COMPANY INFO",
   "COMPANY": "COMPANY",
@@ -54,5 +55,10 @@
   "TIMING TENSIONER": "TIMING TENSIONER",
   "IDLER PULLEY": "IDLER PULLEY",
   "CLUTCH RELEASE BEARING": "CLUTCH RELEASE BEARING",
-  "TIMING BELT KIT": "TIMING BELT KIT"
+  "TIMING BELT KIT": "TIMING BELT KIT",
+  "KOREAN": "Korean",
+  "ENGLISH": "English",
+  "UZBEK": "Uzbek",
+  "ARABIC": "Arabic",
+  "RUSSIAN": "Russian"
 }

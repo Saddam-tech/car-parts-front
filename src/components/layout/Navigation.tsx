@@ -33,27 +33,27 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
             </ul>
             <div className={styles.items}>
                 <input type="text" placeholder="Search" />
-                <h5 className={`${isTransparent ? styles.white : ""}`}>Login</h5>
+                <h5 className={`${isTransparent ? styles.white : ""}`}>{t("login")}</h5>
                 <ul className={styles.language_pack}>
                     <div className={styles.img_container}>
                         <img onClick={() => languageChangeHandler("kr")} title="Korean" src={flag_sk} alt="S.Korean Flag" />
-                        <div className={styles.tooltip}>Korean</div>
+                        <div className={styles.tooltip}>{t("KOREAN")}</div>
                     </div>
                     <div className={styles.img_container}>
                         <img onClick={() => languageChangeHandler("en")} src={flag_gb} alt="English Flag" />
-                        <div className={styles.tooltip}>English</div>
+                        <div className={styles.tooltip}>{t("ENGLISH")}</div>
                     </div>
                     <div className={styles.img_container}>
                         <img onClick={() => languageChangeHandler("ru")} src={flag_ru} alt="Russian Flag" />
-                        <div className={styles.tooltip}>Russian</div>
+                        <div className={styles.tooltip}>{t("RUSSIAN")}</div>
                     </div>
                     <div className={styles.img_container}>
                         <img onClick={() => languageChangeHandler("sa")} src={flag_sa} alt="Saudi Arabian Flag" />
-                        <div className={styles.tooltip}>Arabic</div>
+                        <div className={styles.tooltip}>{t("ARABIC")}</div>
                     </div>
                     <div className={styles.img_container}>
                         <img onClick={() => languageChangeHandler("uz")} src={flag_uzb} alt="Uzbek Flag" />
-                        <div className={styles.tooltip}>Uzbek</div>
+                        <div className={styles.tooltip}>{t("UZBEK")}</div>
                     </div>
                 </ul>
             </div>
