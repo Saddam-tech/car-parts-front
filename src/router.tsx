@@ -9,6 +9,8 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Products from "./pages/Products/Products";
 import { product_list_1 } from "./data/data";
 import { product_list_2 } from "./data/data";
+import NewsnNotice from "./pages/News&Notice/News&Notice";
+import Inquiry from "./pages/Inquiry/Inquiry";
 
 
 const router = createBrowserRouter([{
@@ -23,6 +25,8 @@ const router = createBrowserRouter([{
         { path: "contactus", element: <ContactUs /> },
         { path: "cp-tech", element: <Products products={product_list_1} path="cp-tech" /> },
         { path: "domo-bearings", element: <Products products={product_list_2} path="domo-bearings" /> },
+        { path: "news&notice", element: <NewsnNotice /> },
+        { path: "inquiry", element: <Inquiry /> },
     ]
 }])
 export default router;

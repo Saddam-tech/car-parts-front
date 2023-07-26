@@ -32,7 +32,7 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                 ))}
             </ul>
             <div className={styles.items}>
-                <input type="text" placeholder="Search" />
+                <input type="text" placeholder={t("search")} />
                 <h5 className={`${isTransparent ? styles.white : ""}`}>{t("login")}</h5>
                 <ul className={styles.language_pack}>
                     <div className={styles.img_container}>

@@ -17,20 +17,20 @@ export const navigation = [{
     name: "PRODUCTS", children: [
         { name: "CP-TECH", path: "cp-tech" },
         { name: "DOMO-BEARINGS", path: "domo-bearings" },
-        { name: "ENGINE-OIL", path: "engine-oil" },
-        { name: "RE-BUILT PARTS", path: "rebuild-parts" },
-        { name: "COMMERCIAL PARTS", path: "commercial-parts" },
-        { name: "OE & GENUINE PARTS", path: "oe&-genuine-parts" },
-        { name: "PVC FLOORING", path: "pvc-flooring" },
+        // { name: "ENGINE-OIL", path: "engine-oil" },
+        // { name: "RE-BUILT PARTS", path: "rebuild-parts" },
+        // { name: "COMMERCIAL PARTS", path: "commercial-parts" },
+        // { name: "OE & GENUINE PARTS", path: "oe&-genuine-parts" },
+        // { name: "PVC FLOORING", path: "pvc-flooring" },
     ]
 }, {
 
     name: "CUSTOMER SERVICE", children: [
         { name: "NEWS & NOTICE", path: "news&notice" },
-        { name: "SPECIAL ORDER & STOCK", path: "special-order&stock" },
+        // { name: "SPECIAL ORDER & STOCK", path: "special-order&stock" },
         { name: "CATALOGUE DOWNLOAD", path: "catalogue-download" },
     ]
-}, { name: "INQUIRY", children: [] }]
+}, { name: "INQUIRY", children: [{ name: "Inquiry", path: "inquiry" },] }]
 
 
 export const logo_box_data = [
