@@ -1,5 +1,10 @@
 {
-  "inquiry-header": "If you have any questions, please fill out followings and push submit button. Thank you~!",
+  "name": "اسم",
+  "company name": "اسم الشركة",
+  "country": "دولة",
+  "email": "بريد إلكتروني",
+  "message": "رسالة",
+  "inquiry-header": "إذا كان لديك أي أسئلة ، يرجى ملء ما يلي والضغط على زر الإرسال. شكرا لك ~!",
   "search": "يبحث",
   "login": "تسجيل الدخول",
   "SUB_HEADER": "افعل المزيد من أجل حياتك السعيدة !! استمر غدا ...",

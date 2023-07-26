@@ -43,23 +43,23 @@ const Inquiry = () => {
                     <h4><span>I&nbsp;</span>{t("inquiry-header")}</h4>
                     <div className={styles["input-wrapper"]}>
                         <div className={styles["input-sub-wrapper"]}>
-                            <label htmlFor="name">Name</label>
+                            <label htmlFor="name">{t("name")}</label>
                             <input id='name' type="text" />
                         </div>
                         <div className={styles["input-sub-wrapper"]}>
-                            <label htmlFor="companyname">Company Name</label>
+                            <label htmlFor="companyname">{t("company name")}</label>
                             <input id='companyname' type="text" />
                         </div>
                         <div className={styles["input-sub-wrapper"]}>
-                            <label htmlFor="country">Country</label>
+                            <label htmlFor="country">{t("country")}</label>
                             <input id='country' type="text" />
                         </div>
                         <div className={styles["input-sub-wrapper"]}>
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor="email">{t("email")}</label>
                             <input id='email' type="text" />
                         </div>
                         <div className={styles["input-sub-wrapper"]}>
-                            <label htmlFor="message">Message</label>
+                            <label htmlFor="message">{t("message")}</label>
                             <input id='message' type="text" />
                         </div>
                     </div>

@@ -1,5 +1,10 @@
 {
-  "inquiry-header": "If you have any questions, please fill out followings and push submit button. Thank you~!",
+  "name": "Имя",
+  "company name": "Название компании",
+  "country": "Страна",
+  "email": "Электронная почта",
+  "message": "Сообщение",
+  "inquiry-header": "Если у вас есть какие-либо вопросы, пожалуйста, заполните следующие поля и нажмите кнопку «Отправить». Спасибо~!",
   "search": "Поиск",
   "login": "Bход",
   "SUB_HEADER": "Делайте больше для своей счастливой жизни!! Продолжай завтра...",
