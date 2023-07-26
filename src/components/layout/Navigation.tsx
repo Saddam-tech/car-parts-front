@@ -6,6 +6,11 @@ import Dropdown from "../Dropdown/Dropdown"
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next"
 import { useNavigate } from 'react-router-dom'
+import flag_sa from "../../assets/images/flag-sa.png"
+import flag_sk from "../../assets/images/sk-flag.png"
+import flag_gb from "../../assets/images/english-flag.png"
+import flag_uzb from "../../assets/images/flag-uz.png"
+import flag_ru from "../../assets/images/flag-ru.png"
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const { t } = useTranslation();
@@ -27,10 +32,26 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                 <input type="text" placeholder="Search" />
                 <h5 className={`${isTransparent ? styles.white : ""}`}>Login</h5>
                 <ul className={styles.language_pack}>
-                    <li className={`${isTransparent ? styles.white : ""}`}>Korean</li>
-                    <li className={`${isTransparent ? styles.white : ""}`}>English</li>
-                    <li className={`${isTransparent ? styles.white : ""}`}>Russian</li>
-                    <li className={`${isTransparent ? styles.white : ""}`}>Uzbek</li>
+                    <div className={styles.img_container}>
+                        <img title="Korean" src={flag_sk} alt="S.Korean Flag" />
+                        <div className={styles.tooltip}>Korean</div>
+                    </div>
+                    <div className={styles.img_container}>
+                        <img src={flag_gb} alt="English Flag" />
+                        <div className={styles.tooltip}>English</div>
+                    </div>
+                    <div className={styles.img_container}>
+                        <img src={flag_ru} alt="Russian Flag" />
+                        <div className={styles.tooltip}>Russian</div>
+                    </div>
+                    <div className={styles.img_container}>
+                        <img src={flag_sa} alt="Saudi Arabian Flag" />
+                        <div className={styles.tooltip}>Arabic</div>
+                    </div>
+                    <div className={styles.img_container}>
+                        <img src={flag_uzb} alt="Uzbek Flag" />
+                        <div className={styles.tooltip}>Uzbek</div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -38,3 +59,5 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
 }
 
 export default Navigation
+
+

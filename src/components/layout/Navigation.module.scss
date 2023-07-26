@@ -85,6 +85,7 @@
       cursor: pointer;
       margin: 0;
       padding: 0;
+      position: relative;
       .white {
         color: #ffffff;
         font-weight: 450;
@@ -95,6 +96,34 @@
         color: #000000;
         font-size: 14px;
         cursor: pointer;
+      }
+      .img_container {
+        position: relative;
+        img {
+          width: 25px;
+          filter: grayscale(100%);
+        }
+        img:hover {
+          filter: grayscale(0%);
+        }
+        .tooltip {
+          position: absolute;
+          bottom: -45px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 5px;
+          background-color: #000;
+          color: #fff;
+          border-radius: 5px;
+          white-space: nowrap;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+      }
+      .img_container:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
