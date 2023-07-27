@@ -23,7 +23,7 @@ export default function KaKaoMap({ posX, posY }: kakao_positions) {
         });
 
         marker.setMap(map);
-    }, [mapRef, posX, posY]);
+    }, [mapRef, posX, posY, kakao.maps.LatLng, kakao.maps.Map, kakao.maps.Marker]);
 
     return <div ref={mapRef} className={styles.mapBox} />
 }

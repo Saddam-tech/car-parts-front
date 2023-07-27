@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"  # Redirect all paths
+  to = "/index.html"  # Redirect to the main HTML page
+  status = 200  # Use 200 status code (OK) for the redirect

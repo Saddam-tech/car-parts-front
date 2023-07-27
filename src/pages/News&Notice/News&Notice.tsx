@@ -1,8 +1,6 @@
 import Carousel from '../../components/Carousel/Carousel'
 import styles from "./News&Notice.module.scss"
 import { useSelector, useDispatch } from 'react-redux'
-import Box from '../../components/Box/Box'
-import { box_info } from '../../data/data'
 import { useNavigate } from 'react-router-dom'
 import { setSubActiveIndex } from '../../store/main'
 import { useTranslation } from "react-i18next"
