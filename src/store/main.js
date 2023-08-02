@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   activeIndex: {},
+  lngActiveIndex: 1,
 };
 
 const mainSlice = createSlice({
@@ -14,9 +15,13 @@ const mainSlice = createSlice({
     setSubActiveIndex(state, action) {
       state.activeIndex["child"] = action.payload;
     },
+    setLngActiveIndex(state, action) {
+      state.lngActiveIndex = action.payload;
+    },
   },
 });
 
-export const { setActiveIndex, setSubActiveIndex } = mainSlice.actions;
+export const { setActiveIndex, setSubActiveIndex, setLngActiveIndex } =
+  mainSlice.actions;
 
 export default mainSlice.reducer;

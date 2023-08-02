@@ -1,24 +1,25 @@
 import { useState } from "react"
 import styles from "./Navigation.module.scss"
-import { navigation } from "../../data/data"
+import { lng_params, navigation } from "../../data/data"
 import g_logo from "../../assets/images/g_logo.png";
 import Dropdown from "../Dropdown/Dropdown"
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next"
 import { useNavigate } from 'react-router-dom'
-import flag_sa from "../../assets/images/flag-sa.png"
-import flag_sk from "../../assets/images/sk-flag.png"
-import flag_gb from "../../assets/images/english-flag.png"
-import flag_uzb from "../../assets/images/flag-uz.png"
-import flag_ru from "../../assets/images/flag-ru.png"
+import { setLngActiveIndex } from "../../store/main";
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const [activeIndex, setActiveIndex] = useState<number | null>();
+    const dispatch = useDispatch();
+
     const prevActiveIndex = useSelector((state: any) => state.activeIndex);
-    function languageChangeHandler(lng: string) {
+    const lngActiveIndex = useSelector((state: any) => state.lngActiveIndex);
+
+    function languageChangeHandler(lng: string, index: number) {
         i18n.changeLanguage(lng);
+        dispatch(setLngActiveIndex(index));
     }
     return (
         <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
@@ -35,26 +36,12 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                 <input type="text" placeholder={t("search")} />
                 <h5 className={`${isTransparent ? styles.white : ""}`}>{t("login")}</h5>
                 <ul className={styles.language_pack}>
-                    <div className={styles.img_container}>
-                        <img onClick={() => languageChangeHandler("kr")} title="Korean" src={flag_sk} alt="S.Korean Flag" />
-                        <div className={styles.tooltip}>{t("KOREAN")}</div>
-                    </div>
-                    <div className={styles.img_container}>
-                        <img onClick={() => languageChangeHandler("en")} src={flag_gb} alt="English Flag" />
-                        <div className={styles.tooltip}>{t("ENGLISH")}</div>
-                    </div>
-                    <div className={styles.img_container}>
-                        <img onClick={() => languageChangeHandler("ru")} src={flag_ru} alt="Russian Flag" />
-                        <div className={styles.tooltip}>{t("RUSSIAN")}</div>
-                    </div>
-                    <div className={styles.img_container}>
-                        <img onClick={() => languageChangeHandler("sa")} src={flag_sa} alt="Saudi Arabian Flag" />
-                        <div className={styles.tooltip}>{t("ARABIC")}</div>
-                    </div>
-                    <div className={styles.img_container}>
-                        <img onClick={() => languageChangeHandler("uz")} src={flag_uzb} alt="Uzbek Flag" />
-                        <div className={styles.tooltip}>{t("UZBEK")}</div>
-                    </div>
+                    {lng_params.map((el, i) => (
+                        <div key={i} className={styles.img_container}>
+                            <img className={lngActiveIndex === i ? styles.grayscale : ""} onClick={() => languageChangeHandler(el.short_name, i)} title={el.prompt} src={el.flag} alt={el.prompt} />
+                            <div className={styles.tooltip}>{t(el.name)}</div>
+                        </div>
+                    ))}
                 </ul>
             </div>
         </nav>

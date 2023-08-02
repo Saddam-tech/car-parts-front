@@ -3,6 +3,12 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import FaxIcon from '@mui/icons-material/Fax';
 import EmailIcon from '@mui/icons-material/Email';
 
+import flag_sa from "../assets/images/flag-sa.png"
+import flag_sk from "../assets/images/sk-flag.png"
+import flag_gb from "../assets/images/english-flag.png"
+import flag_uzb from "../assets/images/flag-uz.png"
+import flag_ru from "../assets/images/flag-ru.png"
+
 export const navigation = [{
 
     name: "COMPANY", children: [
@@ -113,3 +119,36 @@ export const product_list_2 = [
     "TIMING BELT KIT",
 ]
 
+export const lng_params = [
+    {
+        name: "KOREAN",
+        short_name: "kr",
+        flag: flag_sk,
+        prompt: "Korean"
+    },
+    {
+        name: "ENGLISH",
+        short_name: "en",
+        flag: flag_gb,
+        prompt: "English"
+    },
+    {
+        name: "RUSSIAN",
+        short_name: "ru",
+        flag: flag_ru,
+        prompt: "Russian"
+    },
+    {
+        name: "ARABIC",
+        short_name: "sa",
+        flag: flag_sa,
+        prompt: "Arabic"
+    },
+    {
+        name: "UZBEK",
+        short_name: "uz",
+        flag: flag_uzb,
+        prompt: "Uzbek"
+    },
+
+]
