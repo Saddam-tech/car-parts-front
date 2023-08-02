@@ -21,9 +21,9 @@ export const navigation = [{
 }, {
 
     name: "PRODUCTS", children: [
-        { name: "CP-TECH", path: "cp-tech" },
+        { name: "SUSPENSION PARTS", path: "suspension-parts" },
         { name: "DOMO-BEARINGS", path: "domo-bearings" },
-        // { name: "ENGINE-OIL", path: "engine-oil" },
+        { name: "ENGINE PARTS", path: "engine-parts" },
         // { name: "RE-BUILT PARTS", path: "rebuild-parts" },
         // { name: "COMMERCIAL PARTS", path: "commercial-parts" },
         // { name: "OE & GENUINE PARTS", path: "oe&-genuine-parts" },
@@ -95,18 +95,18 @@ export const contact_info = [
 ]
 
 export const product_list_1 = [
-    "ALTERNATOR & STARTER",
-    "ELECTRIC COMPONENT PARTS",
-    "WHEEL HUB ASSY",
-    "AIR & OIL FILTER",
-    "POWER STEERING GEAR",
-    "POWER OIL PUMP",
     "SHOCK ABSORBER",
-    "DRIVE SHAFT & BOOT KIT",
-    "SUSPENSION PARTS",
-    "GASKET KIT",
-    "FUEL PUMP MODULE",
-    "BRAKE PAD & SHOE",
+    "BALL JOINT",
+    "COIL SPRING",
+    "POWER STEERING GEAR",
+    "RACK END",
+    "TIE ROD END",
+    "WHEEL HUB ASSY",
+    "BRAKE PAD",
+    "BRAKE SHOE",
+    "STABILIZER LINK",
+    "C.V JOINT",
+    "BRAKE DISK",
 ]
 export const product_list_2 = [
     "WHEEL-HUB BALL BEARING",
