@@ -28,7 +28,7 @@ const Footer = () => {
                         <li onClick={() => navigateHandler(el)} className={activeIndex?.parent?.name === el.name ? styles.active : ""} key={i}>{t(el.name)}</li>
                     ))}
                 </ul>
-                <p>{t("tel")} +82-31-967-1500 | {t("Fax")} +82-31-967-2900 | {t("EMAIL")} : boskoskorea@gmail.com</p>
+                <p>{t("tel")} 02 6949 5745 | {t("Fax")} 02 6949 5746 | {t("EMAIL")} : boskos@naver.com | khon.uzbek@gmail.com</p>
                 <p>{t("address")} : 서울 동대문구 답십리동 961-9</p>
             </div>
             <ArrowCircleUpIcon onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />

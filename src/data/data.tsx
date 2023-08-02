@@ -80,17 +80,17 @@ export const contact_info = [
     {
         icon: <LocalPhoneIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "TEL",
-        p: "+82-31-967-1500"
+        p: "02 6949 5745"
     },
     {
         icon: <FaxIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "FAX",
-        p: "+82-31-967-2900"
+        p: "02 6949 5746"
     },
     {
         icon: <EmailIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "EMAIL",
-        p: "wato@wato.co.kr"
+        p: "boskos@naver.com | khon.uzbek@gmail.com"
     },
 ]
 

@@ -74,9 +74,9 @@ const History = () => {
                         <p>
                             1998. 11 : Awarded in an Export Medal of US 1,000,000$ in 35th Trade Day, Korea. <br />
 
-                            1998. 07 : Established WATO KOREA CORP. in Seoul, Korea. <br />
+                            1998. 07 : Established BOSKOS KOREA CORP. in Seoul, Korea. <br />
 
-                            1997. 01 : Established WATO KOREA INC. in Seoul, Korea.
+                            1997. 01 : Established BOSKOS KOREA INC. in Seoul, Korea.
 
                         </p>
                     </section>
