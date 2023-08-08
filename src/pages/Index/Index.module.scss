@@ -1,11 +1,25 @@
 .main {
   // margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  flex-direction: column;
+
+  @media screen and (max-width: 728px) {
+    gap: 30px;
+  }
   .logo_wrap {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
     margin: 30px 0 30px;
     width: 100%;
+
+    @media screen and (max-width: 728px) {
+      margin: 0px;
+    }
   }
 }

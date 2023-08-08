@@ -4,7 +4,7 @@ import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from "react-i18next"
 import f_logo from "../../assets/images/f_logo.png";
-import { navigation } from "../../data/data";
+import { navigation, version } from "../../data/data";
 import { setActiveIndex, setSubActiveIndex } from "../../store/main";
 const Footer = () => {
     const { t } = useTranslation();
@@ -30,6 +30,7 @@ const Footer = () => {
                 </ul>
                 <p>{t("tel")} 02 6949 5745 | {t("Fax")} 02 6949 5746 | {t("EMAIL")} : boskos@naver.com | khon.uzbek@gmail.com</p>
                 <p>{t("address")} : 서울 동대문구 답십리동 961-9</p>
+                <p>Version: {version}</p>
             </div>
             <ArrowCircleUpIcon className={styles.icon} onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />
         </section>
