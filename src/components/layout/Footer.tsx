@@ -31,7 +31,7 @@ const Footer = () => {
                 <p>{t("tel")} 02 6949 5745 | {t("Fax")} 02 6949 5746 | {t("EMAIL")} : boskos@naver.com | khon.uzbek@gmail.com</p>
                 <p>{t("address")} : 서울 동대문구 답십리동 961-9</p>
             </div>
-            <ArrowCircleUpIcon onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />
+            <ArrowCircleUpIcon className={styles.icon} onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />
         </section>
     )
 }

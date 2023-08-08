@@ -130,6 +130,12 @@
       }
     }
   }
+
+  // hidden navigation bar for phone size
+
+  @media screen and (max-width: 728px) {
+    display: none;
+  }
 }
 
 .list_wrap {
