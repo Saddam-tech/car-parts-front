@@ -41,6 +41,10 @@
       padding: 0;
       color: #ffffff;
       font-size: 0.5em;
+
+      @media screen and (min-width: 728px) {
+        font-size: 0.8em;
+      }
     }
   }
 }
