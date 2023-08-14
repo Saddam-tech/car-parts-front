@@ -1,3 +1,8 @@
+interface drawerProps {
+  drawer: boolean;
+  setDrawer: Function;
+}
+
 interface children {
   name: string;
   path: string;
