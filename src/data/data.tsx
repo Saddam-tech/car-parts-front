@@ -9,7 +9,7 @@ import flag_gb from "../assets/images/english-flag.png"
 import flag_uzb from "../assets/images/flag-uz.png"
 import flag_ru from "../assets/images/flag-ru.png"
 
-export const version = "0.0.1";
+export const version = "0.0.2";
 
 export const navigation = [{
 
