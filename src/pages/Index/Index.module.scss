@@ -5,6 +5,32 @@
   height: 100%;
   flex-direction: column;
 
+  .card {
+    position: absolute;
+    padding: 30px;
+    max-width: 780px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 100px;
+    left: 220px;
+    z-index: 9;
+    @media screen and (max-width: 728px) {
+      max-width: 350px;
+      width: 100%;
+      top: 190px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      color: #ff0000;
+      font-weight: 600;
+    }
+    p {
+      color: #000000;
+    }
+  }
+
   .logo_wrap {
     display: flex;
     align-items: center;
