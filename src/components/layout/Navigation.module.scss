@@ -9,10 +9,20 @@
   top: 0;
   left: 0;
   width: 100%;
+  @media screen and (max-width: 728px) {
+    gap: 0;
+    justify-content: space-between;
+    padding: 10px;
+  }
   img {
     width: 100px;
     object-fit: contain;
     cursor: pointer;
+  }
+  .burger-menu {
+    @media screen and (min-width: 728px) {
+      display: none;
+    }
   }
 
   .parent {

@@ -8,13 +8,14 @@ import { useTranslation } from "react-i18next"
 import { useNavigate } from 'react-router-dom'
 import { setLngActiveIndex } from "../../store/main";
 import Drawer from "../Drawer/Drawer";
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const [activeIndex, setActiveIndex] = useState<number | null>();
     const dispatch = useDispatch();
-    const [drawer, setDrawer] = useState<boolean>(true);
+    const [drawer, setDrawer] = useState<boolean>(false);
 
     const prevActiveIndex = useSelector((state: any) => state.activeIndex);
     const lngActiveIndex = useSelector((state: any) => state.lngActiveIndex);
@@ -27,6 +28,7 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
         <>
             <Drawer drawer={drawer} setDrawer={setDrawer} />
             <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
+                <MenuSharpIcon onClick={() => setDrawer(true)} className={styles["burger-menu"]} sx={{ color: "#ffffff", fontSize: "34px" }} />
                 <img onClick={() => navigate("/")} src={g_logo} alt="g_logo" />
                 <ul className={styles.parent}>
                     {navigation.map((el, i) => (

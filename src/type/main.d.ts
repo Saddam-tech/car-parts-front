@@ -54,3 +54,8 @@ interface active_path {
   name: string;
   children: sub_active_path[];
 }
+
+interface BackdropProps {
+  close: Function;
+  children: any;
+}
