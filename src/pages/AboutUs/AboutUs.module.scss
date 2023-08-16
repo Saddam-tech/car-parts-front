@@ -10,6 +10,14 @@
     left: 220px;
     z-index: 9;
 
+    @media screen and (max-width: 728px) {
+      max-width: 350px;
+      width: 100%;
+      top: 190px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     h1 {
       color: #ff0000;
       font-weight: 600;
@@ -23,6 +31,9 @@
     align-items: center;
     justify-content: center;
     margin: 0;
+    @media screen and (max-width: 728px) {
+      display: none;
+    }
     li {
       font-size: 13.5px;
       list-style-type: none;

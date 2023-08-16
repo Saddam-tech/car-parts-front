@@ -30,7 +30,7 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
             <Drawer drawer={drawer} setDrawer={setDrawer} />
             <Backdrop open={drawer} close={setDrawer} />
             <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
-                <MenuSharpIcon onClick={() => setDrawer(true)} className={styles["burger-menu"]} sx={{ color: "#ffffff", fontSize: "34px" }} />
+                <MenuSharpIcon onClick={() => setDrawer(true)} className={styles["burger-menu"]} sx={{ color: "#000000", fontSize: "34px" }} />
                 <img onClick={() => navigate("/")} src={g_logo} alt="g_logo" />
                 <ul className={styles.parent}>
                     {navigation.map((el, i) => (
