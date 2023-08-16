@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { setLngActiveIndex } from "../../store/main";
 import Drawer from "../Drawer/Drawer";
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
+import Backdrop from "../Backdrop/Backdrop";
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const { t, i18n } = useTranslation();
@@ -27,6 +28,7 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     return (
         <>
             <Drawer drawer={drawer} setDrawer={setDrawer} />
+            <Backdrop open={drawer} close={setDrawer} />
             <nav className={`${styles.navigation} ${isTransparent ? styles.transparent : styles.nottransparent}`}>
                 <MenuSharpIcon onClick={() => setDrawer(true)} className={styles["burger-menu"]} sx={{ color: "#ffffff", fontSize: "34px" }} />
                 <img onClick={() => navigate("/")} src={g_logo} alt="g_logo" />

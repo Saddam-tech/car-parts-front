@@ -10,7 +10,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 function Drawer({ drawer, setDrawer }: drawerProps) {
   const navigate = useNavigate();
-  const [activeIndex, setActiveIndex] = useState<number>()
+  const [activeIndexObj, setActiveIndexObj] = useState<any>({ 0: false, 1: false, 2: false, 3: false });
   const { t } = useTranslation();
   return (
     <section className={`${styles.main} ${!drawer ? styles.hide : ""}`}>
@@ -19,13 +19,13 @@ function Drawer({ drawer, setDrawer }: drawerProps) {
         <ClearIcon onClick={() => setDrawer(false)} sx={{ color: "#ffffff" }} />
       </div>
       <ul>
-        {navigation.map((el, i) => (
-          <li className={styles.parent} onClick={() => setActiveIndex(i)} key={i}>
-            <div className={styles["line-wrap"]}>
+        {navigation.map((el, i): any => (
+          <li className={styles.parent} key={i}>
+            <div onClick={() => setActiveIndexObj((prev: any) => ({ ...prev, [i]: !activeIndexObj[i] }))} className={styles["line-wrap"]}>
               <p>{el.name}</p>
               <ExpandMoreIcon sx={{ color: "#dbdbdb" }} />
             </div>
-            <ul className={`${styles.child} ${activeIndex === i && styles.show}`}>
+            <ul className={`${styles.child} ${activeIndexObj[i] && styles.show}`}>
               {el?.children.map((_el, _i) => (
                 <li key={_i}>{_el.name}</li>
               ))}

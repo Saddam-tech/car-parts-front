@@ -57,5 +57,5 @@ interface active_path {
 
 interface BackdropProps {
   close: Function;
-  children: any;
+  open: boolean;
 }

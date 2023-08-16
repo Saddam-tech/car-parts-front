@@ -1,8 +1,8 @@
 import styles from "./Backdrop.module.scss";
 
-const Backdrop = ({ close, children }: BackdropProps) => {
+const Backdrop = ({ open, close }: BackdropProps) => {
     return (
-        <div className={styles.main} onClick={() => close(false)}>{children}</div>
+        <div className={`${styles.main} ${open ? styles.show : ""}`} onClick={() => close(false)}></div>
     )
 }
 

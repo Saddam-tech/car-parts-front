@@ -12,7 +12,7 @@
   z-index: 9999;
   overflow: hidden;
   flex-direction: column;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 
   .dark-belt {
     display: flex;
@@ -54,7 +54,26 @@
         }
       }
       .child {
-        display: none;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.4s ease;
+        padding-left: 40px;
+        clear: both;
+
+        li {
+          font-size: 14px;
+          list-style-type: none;
+          padding: 10px;
+        }
+      }
+
+      .show {
+        height: 100%;
+        transition: height 0.4s ease;
       }
     }
   }
@@ -66,5 +85,5 @@
 
 .hide {
   transform: translate(-1400px);
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }

@@ -1,8 +1,19 @@
 .main {
+  visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100vh;
   cursor: pointer;
-  background-size: cover;
-  backdrop-filter: blur(10px);
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+
+  @media screen and (min-width: 728px) {
+    display: none;
+  }
+}
+
+.show {
+  visibility: visible;
+  transition: 0.3s ease-in-out;
 }
