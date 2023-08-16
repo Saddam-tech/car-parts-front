@@ -34,12 +34,12 @@ function Drawer({ drawer, setDrawer }: drawerProps) {
         {navigation.map((el, i): any => (
           <li className={styles.parent} key={i}>
             <div onClick={() => handleDropdown(i)} className={styles["line-wrap"]}>
-              <p>{el.name}</p>
+              <p>{t(el.name)}</p>
               {activeIndexObj[i] ? <ExpandLessIcon sx={{ color: "#dbdbdb" }} /> : <ExpandMoreIcon sx={{ color: "#dbdbdb" }} />}
             </div>
             <ul className={`${styles.child} ${activeIndexObj[i] && styles.show}`}>
               {el?.children.map((_el, _i) => (
-                <li onClick={() => handleNavigate(_el.path, el, _el)} key={_i}>{_el.name}</li>
+                <li onClick={() => handleNavigate(_el.path, el, _el)} key={_i}>{t(_el.name)}</li>
               ))}
             </ul>
           </li>
