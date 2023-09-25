@@ -9,7 +9,7 @@
   "inquiry-header": "If you have any questions, please fill out followings and push submit button. Thank you~!",
   "search": "Search",
   "login": "Login",
-  "SUB_HEADER": "Do More For Your Happy Life!! Carry On Tomorrow...",
+  "SUB_HEADER": "Auto spare parts. Boskos - reliable and high quality!",
   "COMPANY INFO": "COMPANY INFO",
   "COMPANY": "COMPANY",
   "PRODUCTS": "PRODUCTS",
@@ -18,6 +18,7 @@
   "ABOUT US": "ABOUT US",
   "ORGANIZATION & PARTNERS": "ORGANIZATION & PARTNERS",
   "HISTORY": "HISTORY",
+  "history": "HISTORY",
   "PATENT & CERTIFICATION": "PATENT & CERTIFICATION",
   "CONTACT US": "CONTACT US",
   "CP-TECH": "CP-TECH",
@@ -37,6 +38,7 @@
   "box-info-p-1": "BOSKOS should be one team with Buyer & Supplier, You & Me… BOSKOS will always effort to grow with our Buyer & Suppliers.",
   "box-info-p-2": "BOSKOS provides products of high quality & low price with thorough quality control to our customers.",
   "box-info-p-3": "Become one of the leading company for automotive parts in the world. BOSKOS offers our customers the highest quality products with best service.",
+  "history": "Boskos is one of the most advanced companies of our Republic for the sale and delivery of quality auto spare parts. Initially, this company, which was founded in 2015, supplied auto spare parts to some regions of our republic, and now it exports not only to the whole of Uzbekistan, but also to the neighboring countries of Kazakhstan, Tajikistan, and Kyrgyzstan.",
   "tel": "Tel.",
   "fax": "Fax.",
   "address": "Addr.",
@@ -69,5 +71,6 @@
   "ENGLISH": "English",
   "UZBEK": "Uzbek",
   "ARABIC": "Arabic",
-  "RUSSIAN": "Russian"
+  "RUSSIAN": "Russian",
+  "DOWNLOAD": "Click here to download"
 }

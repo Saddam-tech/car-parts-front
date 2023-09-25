@@ -39,7 +39,7 @@ const ContactUs = () => {
                 </section>
                 <section className={styles.credentials}>
                     {contact_info.map((el, i) => (
-                        <div className={styles["inner-card"]}>
+                        <div key={i} className={styles["inner-card"]}>
                             {el.icon}
                             <h3>{t(el.header)}</h3>
                             <p>{el.p}</p>

@@ -9,7 +9,7 @@
   "inquiry-header": "Agar sizda biron bir savol bo'lsa, iltimos, quyidagini to'ldiring va yuborish tugmasini bosing. Rahmat~!",
   "search": "Qidirmoq",
   "login": "Kirish",
-  "SUB_HEADER": "Baxtli hayotingiz uchun ko'proq harakat qiling !! Va ertasiga yana davom eting...",
+  "SUB_HEADER": "Avto extiyot qismlar. Boskos - ishonchli va sifatli",
   "COMPANY INFO": "KOMPANIYA MA'LUMOTI",
   "COMPANY": "KOMPANIYA",
   "PRODUCTS": "MAHSULOTLAR",
@@ -17,7 +17,7 @@
   "INQUIRY": "SAVOLLAR",
   "ABOUT US": "BIZ HAQIMIZDA",
   "ORGANIZATION & PARTNERS": "TASHKILOT VA HAMKORLIKLAR",
-  "HISTORY": "HISTORY",
+  "HISTORY": "TARIX",
   "PATENT & CERTIFICATION": "PATENT VA SERTIFIKATSIYA",
   "CONTACT US": "BIZ BILAN BOG'LANISH",
   "CP-TECH": "CP-TEXNOLOGIYA",
@@ -29,7 +29,7 @@
   "PVC FLOORING": "PVX pol",
   "NEWS & NOTICE": "YANGILIK VA XABARLAR",
   "SPECIAL ORDER & STOCK": "MAXSUS BUYURTMA VA AKSIYA",
-  "CATALOGUE DOWNLOAD": "KATALOG YUKLASH OLISH",
+  "CATALOGUE DOWNLOAD": "KATALOG YUKLAB OLISH",
   "sub-sub-header": "Biznes falsafasi",
   "box-info-h-1": "WE ARE THE ONE",
   "box-info-h-2": "MISSIYA",
@@ -37,6 +37,7 @@
   "box-info-p-1": "BOSKOS xaridor va yetkazib beruvchi, siz va men bilan bir jamoa bo'lishi kerak... BOSKOS har doim bizning xaridor va yetkazib beruvchilarimiz bilan o'sishga harakat qiladi.",
   "box-info-p-2": "BOSKOS mijozlarimizga sifatli va arzon narxlardagi mahsulotlarni puxta sifat nazorati bilan ta'minlaydi.",
   "box-info-p-3": "Dunyodagi avtomobil qismlari bo'yicha yetakchi kompaniyalardan biriga aylaning. BOSKOS mijozlarimizga eng yaxshi xizmat ko'rsatadigan eng yuqori sifatli mahsulotlarni taklif etadi.",
+  "history": "Boskos - sifatli avto ehtiyot qismlarini sotish va yetkazib berish bo‘yicha Respublikamizning eng ilg‘or kompaniyalaridan biri hisoblanadi. Dastlab 2015-yilda tashkil topgan ushbu kompaniya respublikamiznig ayrim hududlariga avto ehtiyot qismlarini yetkazib bergan bo`lsa, xozirgi kunga kelib nafaqat butun O‘zekiston balki qo‘shni Qozog`iston, Tojikiston, Qirg‘iziston davlatlariga o‘z eksportini yo‘lga qo‘ydi.",
   "tel": "Tel.",
   "fax": "Faks.",
   "address": "Manzil.",
@@ -69,5 +70,6 @@
   "ENGLISH": "Inglizcha",
   "UZBEK": "O'zbekcha",
   "ARABIC": "Arabcha",
-  "RUSSIAN": "Ruscha"
+  "RUSSIAN": "Ruscha",
+  "DOWNLOAD": "Yuklab olish"
 }

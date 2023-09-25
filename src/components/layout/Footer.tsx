@@ -28,8 +28,10 @@ const Footer = () => {
                         <li onClick={() => navigateHandler(el)} className={activeIndex?.parent?.name === el.name ? styles.active : ""} key={i}>{t(el.name)}</li>
                     ))}
                 </ul>
-                <p>{t("tel")} 02 6949 5745 | {t("Fax")} 02 6949 5746 | {t("EMAIL")} : boskos@naver.com | khon.uzbek@gmail.com</p>
-                <p>{t("address")} : 서울 동대문구 답십리동 961-9</p>
+                <p>{t("tel")} Korea: 02 6949 5745 <br /> Uzbekistan: +998555005655, +998972550070 <br /> {t("Fax")} Korea: 02 6949 5746 <br /> {t("EMAIL")} : boskos@naver.com | khon.uzbek@gmail.com</p>
+                <p>{t("address")} Korea: 서울 동대문구 답십리동 961-9 <br /> Uzbekistan: Toshkent shahar Sergili tumani, Sergeli mashina bozori, 2.4.-Blok 22-magazin</p>
+                <p>Telegram: BOSKOS_UZ</p>
+                <p>Instagram: BOSKOS_UZ</p>
                 <p>Version: {version}</p>
             </div>
             <ArrowCircleUpIcon className={styles.icon} onClick={scrollTop} fontSize="large" sx={{ color: "#b7b7b7", cursor: "pointer", }} />

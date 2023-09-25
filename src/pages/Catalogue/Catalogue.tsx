@@ -38,7 +38,7 @@ const Catalogue = () => {
                     <hr />
                     <button className={styles['download-button']}>
                         <a href="./Boskos-catalog.pdf" download>
-                            Click here to download
+                            {t("DOWNLOAD")}
                         </a>
                     </button>
                 </div>
