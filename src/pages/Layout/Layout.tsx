@@ -15,6 +15,7 @@ const Layout = () => {
         } else {
             setIsTransparent(false)
         }
+
     }
 
     useEffect(() => {
