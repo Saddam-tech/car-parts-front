@@ -122,6 +122,9 @@
         border: 1px solid #dddddd;
         height: 180px;
         padding: 10px 27px;
+        list-style-type: none;
+        text-decoration: none;
+        color: #000000;
         h3 {
           font-size: 20px;
         }
@@ -129,6 +132,8 @@
           font-size: 14px;
           margin: 0;
           padding: 0;
+          text-align: center;
+          cursor: pointer;
         }
       }
     }

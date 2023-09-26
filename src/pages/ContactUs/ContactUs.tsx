@@ -39,11 +39,11 @@ const ContactUs = () => {
                 </section>
                 <section className={styles.credentials}>
                     {contact_info.map((el, i) => (
-                        <div key={i} className={styles["inner-card"]}>
+                        <a href={el.link} target={el.link ? "_blank" : "_self"} rel="noreferrer" key={i} className={styles["inner-card"]}>
                             {el.icon}
                             <h3>{t(el.header)}</h3>
                             <p>{el.p}</p>
-                        </div>
+                        </a>
                     ))}
                 </section>
             </section>

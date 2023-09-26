@@ -79,32 +79,38 @@ export const contact_info = [
     {
         icon: <LocationOnIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "ADDRESS",
-        p: "Korea: 서울 동대문구 답십리동 961-9 | Uzbekistan: Toshkent shahar Sergili tumani, Sergeli mashina bozori, 2.4.-Blok 22-magazin"
+        p: "Korea: 서울 동대문구 답십리동 961-9 | Uzbekistan: Toshkent shahar Sergili tumani, Sergeli mashina bozori, 2.4.-Blok 22-magazin",
+        link: ""
     },
     {
         icon: <LocalPhoneIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "TEL",
-        p: "Korea: 02 6949 5745 | Uzbekistan: +998555005655, +998972550070"
+        p: "Korea: 02 6949 5745 | Uzbekistan: +998555005655, +998972550070",
+        link: ""
     },
     {
         icon: <FaxIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "FAX",
-        p: "Korea: 02 6949 5746"
+        p: "Korea: 02 6949 5746",
+        link: ""
     },
     {
         icon: <EmailIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "EMAIL",
-        p: "boskos@naver.com | khon.uzbek@gmail.com"
+        p: "boskos@naver.com | khon.uzbek@gmail.com",
+        link: ""
     },
     {
         icon: <TelegramIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "TELEGRAM",
-        p: "BOSKOS_UZ"
+        p: "BOSKOS_UZ",
+        link: "https://t.me/BOSKOS_UZ"
     },
     {
         icon: <InstagramIcon fontSize="large" sx={{ color: "#1CA2FE" }} />,
         header: "INSTAGRAM",
-        p: "BOSKOS_UZ"
+        p: "BOSKOS_UZ",
+        link: "https://instagram.com/BOSKOS_UZ"
     },
 ]
 
