@@ -58,16 +58,16 @@ export const box_info = [
         content: "box-info-p-1",
         img_src: "aboutus-0"
     },
-    {
-        header: "box-info-h-2",
-        content: "box-info-p-2",
-        img_src: "aboutus-1"
-    },
-    {
-        header: "box-info-h-3",
-        content: "box-info-p-3",
-        img_src: "aboutus-2"
-    },
+    // {
+    //     header: "box-info-h-2",
+    //     content: "box-info-p-2",
+    //     img_src: "aboutus-1"
+    // },
+    // {
+    //     header: "box-info-h-3",
+    //     content: "box-info-p-3",
+    //     img_src: "aboutus-2"
+    // },
 ]
 
 export const map_coordinates = {
