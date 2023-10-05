@@ -19,7 +19,7 @@ export const navigation = [{
         { name: "ABOUT US", path: "aboutus" },
         { name: "ORGANIZATION & PARTNERS", path: "org&prtns" },
         { name: "HISTORY", path: "history" },
-        { name: "PATENT & CERTIFICATION", path: "patent&cert" },
+        // { name: "PATENT & CERTIFICATION", path: "patent&cert" },
         { name: "CONTACT US", path: "contactus" },
     ]
 }, {
@@ -54,9 +54,24 @@ export const logo_box_data = [
 
 export const box_info = [
     {
-        header: "box-info-h-1",
-        content: "box-info-p-1",
-        img_src: "aboutus-0"
+        header: "",
+        content: "SECO",
+        img_src: "seco"
+    },
+    {
+        header: "",
+        content: "ISS AUTOPARTS",
+        img_src: "s-autoparts"
+    },
+    {
+        header: "",
+        content: "KOREAN PISTON RING",
+        img_src: "kpr"
+    },
+    {
+        header: "",
+        content: "KOREAN ENGINE VALVE",
+        img_src: "k&v"
     },
     // {
     //     header: "box-info-h-2",

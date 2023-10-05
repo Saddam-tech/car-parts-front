@@ -84,6 +84,11 @@
       width: 100%;
       margin: 20px 0;
       flex-direction: column;
+      .card_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .org-structure-img {
         width: 1150px;
         @media screen and (max-width: 728px) {

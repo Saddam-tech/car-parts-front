@@ -45,7 +45,7 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                     <input type="text" placeholder={t("search")} />
                     {/* <h5 className={`${isTransparent ? styles.white : ""}`}>{t("CATALOG")}</h5> */}
                     <a className={`${isTransparent ? styles.white : ""}`} href="./Boskos-catalog.pdf" download>
-                        {t("CATALOG")} <FileDownloadIcon sx={{ color: "#ffffff", fontSize: "20px" }} />
+                        {t("CATALOG")} <FileDownloadIcon sx={{ color: isTransparent ? "#ffffff" : "#000000", fontSize: "20px" }} />
                     </a>
                     <ul className={styles.language_pack}>
                         {lng_params.map((el, i) => (

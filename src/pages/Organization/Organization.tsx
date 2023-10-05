@@ -34,15 +34,15 @@ const Organization = () => {
                     <h2>{t(activeIndex?.child?.name)}</h2>
                     <hr />
                 </div>
-                <section className={styles["wrapper-2"]}>
+                {/* <section className={styles["wrapper-2"]}>
                     <img className={styles["org-structure-img"]} src={org_structure} alt="chart" />
-                </section>
+                </section> */}
             </section>
             <section className={`${styles["outer-wrapper"]} ${styles["c-white"]}`}>
-                <div className={styles.wrapper}>
+                {/* <div className={styles.wrapper}>
                     <h2>{t("PARTNERS")}</h2>
                     <hr />
-                </div>
+                </div> */}
                 <section className={styles["wrapper-2"]}>
                     <div className={styles.card_wrapper}>
                         {box_info.map((el, i) => (
