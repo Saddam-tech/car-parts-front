@@ -1,7 +1,6 @@
 import Carousel from '../../components/Carousel/Carousel'
 import styles from "./Organization.module.scss"
 import { useSelector, useDispatch } from 'react-redux'
-import org_structure from "../../assets/images/firm-structure.png"
 import Box from '../../components/Box/Box'
 import { box_info } from '../../data/data'
 import { setSubActiveIndex } from '../../store/main'
