@@ -10,6 +10,7 @@ import { setLngActiveIndex } from "../../store/main";
 import Drawer from "../Drawer/Drawer";
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import Backdrop from "../Backdrop/Backdrop";
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
     const { t, i18n } = useTranslation();
@@ -42,7 +43,10 @@ const Navigation = ({ isTransparent }: { isTransparent: boolean }) => {
                 </ul>
                 <div className={styles.items}>
                     <input type="text" placeholder={t("search")} />
-                    <h5 className={`${isTransparent ? styles.white : ""}`}>{t("login")}</h5>
+                    {/* <h5 className={`${isTransparent ? styles.white : ""}`}>{t("CATALOG")}</h5> */}
+                    <a className={`${isTransparent ? styles.white : ""}`} href="./Boskos-catalog.pdf" download>
+                        {t("CATALOG")} <FileDownloadIcon sx={{ color: "#ffffff", fontSize: "20px" }} />
+                    </a>
                     <ul className={styles.language_pack}>
                         {lng_params.map((el, i) => (
                             <div key={i} className={styles.img_container}>

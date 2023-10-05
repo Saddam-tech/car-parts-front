@@ -11,7 +11,7 @@ import flag_gb from "../assets/images/english-flag.png"
 import flag_uzb from "../assets/images/flag-uz.png"
 import flag_ru from "../assets/images/flag-ru.png"
 
-export const version = "0.0.3";
+export const version = "0.0.4";
 
 export const navigation = [{
 
@@ -26,8 +26,8 @@ export const navigation = [{
 
     name: "PRODUCTS", children: [
         { name: "SUSPENSION PARTS", path: "suspension-parts" },
-        { name: "DOMO-BEARINGS", path: "domo-bearings" },
         { name: "ENGINE PARTS", path: "engine-parts" },
+        // { name: "DOMO-BEARINGS", path: "domo-bearings" },
         // { name: "RE-BUILT PARTS", path: "rebuild-parts" },
         // { name: "COMMERCIAL PARTS", path: "commercial-parts" },
         // { name: "OE & GENUINE PARTS", path: "oe&-genuine-parts" },
@@ -126,7 +126,7 @@ export const product_list_1 = [
     "BRAKE SHOE",
     "STABILIZER LINK",
     "C.V JOINT",
-    "BRAKE DISK",
+    "BRAKE DISC",
 ]
 export const product_list_2 = [
     "WHEEL-HUB BALL BEARING",
