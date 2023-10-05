@@ -68,7 +68,9 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    h5 {
+    a {
+      list-style-type: none;
+      text-decoration: none;
       color: #000000;
       font-size: 14px;
       margin: 0;
