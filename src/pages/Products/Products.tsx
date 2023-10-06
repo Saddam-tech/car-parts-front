@@ -17,11 +17,11 @@ const Products = ({ products, path }: product_list) => {
     }
     return (
         <section className={styles.main}>
-            <Carousel low={true} />
+            {/* <Carousel low={true} />
             <div className={styles.card}>
                 <h1>{t(activeIndex?.parent?.name)}</h1>
                 <p>{t("SUB_HEADER")}</p>
-            </div>
+            </div> */}
             <ul className={styles.navbar}>
                 {activeIndex?.parent?.children.map((el: children, i: number) => (
                     <li onClick={() => navigateHandler(el)} className={`${el.name === activeIndex?.child?.name ? styles.blue : styles.white}`} key={i}>{t(el.name)}</li>

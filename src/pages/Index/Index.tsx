@@ -3,6 +3,7 @@ import LogoBox from '../../components/Logobox/Logobox'
 import styles from "./Index.module.scss"
 import { logo_box_data } from '../../data/data'
 import { useTranslation } from "react-i18next"
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 const Index = () => {
@@ -19,6 +20,9 @@ const Index = () => {
                     <LogoBox name={el.name} img={el.img} key={i} />
                 ))}
             </div>
+            <a href="./Boskos-catalog.pdf" download>
+                {t("CATALOG")} <FileDownloadIcon />
+            </a>
         </section>
     )
 }

@@ -16,11 +16,11 @@ const Catalogue = () => {
     }
     return (
         <section className={styles.main}>
-            <Carousel low={true} />
+            {/* <Carousel low={true} />
             <div className={styles.card}>
                 <h1>{t(activeIndex?.parent?.name)}</h1>
                 <p>{t("SUB_HEADER")}</p>
-            </div>
+            </div> */}
             <ul className={styles.navbar}>
                 {activeIndex?.parent?.children.map((el: children, i: number) => (
                     <li
