@@ -1,4 +1,3 @@
-import Carousel from '../../components/Carousel/Carousel'
 import styles from "./Products.module.scss"
 import Product from '../../components/Product/Product'
 import { useSelector, useDispatch } from 'react-redux'

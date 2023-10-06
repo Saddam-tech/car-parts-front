@@ -1,4 +1,3 @@
-import Carousel from '../../components/Carousel/Carousel'
 import styles from "./ContactUs.module.scss"
 import KaKaoMap from '../../components/KakaoMap/KakaoMap'
 import { map_coordinates, contact_info } from '../../data/data'

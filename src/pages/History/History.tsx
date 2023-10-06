@@ -1,4 +1,4 @@
-import Carousel from '../../components/Carousel/Carousel'
+
 import styles from "./History.module.scss"
 import { useSelector, useDispatch } from 'react-redux'
 import { setSubActiveIndex } from '../../store/main'

@@ -1,4 +1,3 @@
-import Carousel from '../../components/Carousel/Carousel'
 import styles from "./Organization.module.scss"
 import { useSelector, useDispatch } from 'react-redux'
 import Box from '../../components/Box/Box'

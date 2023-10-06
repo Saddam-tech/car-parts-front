@@ -1,4 +1,3 @@
-import Carousel from '../../components/Carousel/Carousel'
 import styles from "./News&Notice.module.scss"
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
