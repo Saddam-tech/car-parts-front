@@ -16,7 +16,7 @@ export const version = "0.0.4";
 export const navigation = [{
 
     name: "COMPANY", children: [
-        { name: "ABOUT US", path: "aboutus" },
+        // { name: "ABOUT US", path: "aboutus" },
         { name: "ORGANIZATION & PARTNERS", path: "org&prtns" },
         { name: "HISTORY", path: "history" },
         // { name: "PATENT & CERTIFICATION", path: "patent&cert" },
@@ -60,11 +60,6 @@ export const box_info = [
     },
     {
         header: "",
-        content: "ISS AUTOPARTS",
-        img_src: "s-autoparts"
-    },
-    {
-        header: "",
         content: "KOREAN PISTON RING",
         img_src: "kpr"
     },
@@ -72,6 +67,11 @@ export const box_info = [
         header: "",
         content: "KOREAN ENGINE VALVE",
         img_src: "k&v"
+    },
+    {
+        header: "",
+        content: "MOTECH",
+        img_src: "motech"
     },
     // {
     //     header: "box-info-h-2",
